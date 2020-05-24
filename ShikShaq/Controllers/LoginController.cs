@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ShikShaq.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,7 +16,7 @@ namespace ShikShaq.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(FormCollection collection)
+        public ActionResult Autherize(User loginUser)
         {
             return View();
         }

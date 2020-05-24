@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
@@ -10,15 +11,29 @@ namespace ShikShaq.Models
     {
 
         [Key]
-        private long id { get; set; }
-        private string name { get; set; }
-        private string email { get; set;}
-        private DateTime birthday { get; set; }
-        private String address { get; set; }
-        private float height { get; set; }
-        private float weigth { get; set; }
-        private String password { get; set; }
-        private bool isAdmin { get; set; }
+        public long id { get; set; }
+
+        public string name { get; set; }
+
+        [DisplayName("Email")]
+        [DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "This field is required!")]
+        public string email { get; set;}
+
+        public DateTime birthday { get; set; }
+
+        public String address { get; set; }
+
+        public float height { get; set; }
+
+        public float weigth { get; set; }
+
+        [DisplayName("Password")]
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "This field is required!")]
+        public String password { get; set; }
+
+        public bool isAdmin { get; set; }
 
     }
 }
