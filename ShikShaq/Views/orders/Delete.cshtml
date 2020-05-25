@@ -1,0 +1,48 @@
+﻿@model ShikShaq.order
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.branch.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.branch.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.user.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.user.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.order_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.order_date)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
