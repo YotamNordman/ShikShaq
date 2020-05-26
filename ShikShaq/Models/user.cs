@@ -21,6 +21,8 @@ namespace ShikShaq
         public string name { get; set; }
 
         [StringLength(45)]
+        [DataType(DataType.EmailAddress)]
+        [Required(ErrorMessage = "Email is required!")]
         public string email { get; set; }
 
         public DateTime? birthday { get; set; }
@@ -33,6 +35,8 @@ namespace ShikShaq
         public float? weight { get; set; }
 
         [StringLength(45)]
+        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "Password is required!")]
         public string password { get; set; }
 
         [StringLength(1)]
