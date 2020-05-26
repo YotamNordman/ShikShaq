@@ -12,7 +12,7 @@ namespace ShikShaq.Controllers
 {
     public class tagsController : Controller
     {
-        private Model1 db = new Model1();
+        private ShikShaqContext db = new ShikShaqContext();
 
         // GET: tags
         public ActionResult Index()

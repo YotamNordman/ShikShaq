@@ -12,7 +12,7 @@ namespace ShikShaq.Controllers
 {
     public class product_in_branchController : Controller
     {
-        private Model1 db = new Model1();
+        private ShikShaqContext db = new ShikShaqContext();
 
         // GET: product_in_branch
         public ActionResult Index()
