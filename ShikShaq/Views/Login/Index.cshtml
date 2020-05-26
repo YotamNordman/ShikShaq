@@ -1,0 +1,24 @@
+﻿@model ShikShaq.user
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/CSS/login.css" rel="stylesheet" type="text/css">
+
+@using (Html.BeginForm("Autherize", "Login" , FormMethod.Post))
+{
+    <section class="login-page">
+        <section class="form">
+            <form class="login-form">
+                @Html.EditorFor(model => model.email, new { htmlAttributes = new { placeholder = Html.DisplayNameFor(model => model.email) } })
+                @Html.EditorFor(model => model.password, new { htmlAttributes = new { placeholder = Html.DisplayNameFor(model => model.password) } })
+
+                <button>login</button>
+                <p class="message">@ViewData["loginError"]</p>
+                <p class="message">Not registered? <a href="#">Create an account</a></p>
+            </form>
+        </section>
+    </section>
+}
+
+
