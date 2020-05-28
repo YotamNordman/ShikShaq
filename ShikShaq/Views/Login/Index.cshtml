@@ -14,7 +14,7 @@
                 @Html.EditorFor(model => model.password, new { htmlAttributes = new { placeholder = Html.DisplayNameFor(model => model.password) } })
 
                 <button>login</button>
-                <p class="message">@ViewData["loginError"]</p>
+                <p class="message">@Html.ValidationMessage("UserNotExist", new { @class = "text-danger" })</p>
                 <p class="message">Not registered? <a href="#">Create an account</a></p>
             </form>
         </section>

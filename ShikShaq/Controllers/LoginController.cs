@@ -14,7 +14,6 @@ namespace ShikShaq.Controllers
         public LoginController ()
         {
             _context = new ShikShaqContext();
-            ViewData["loginError"] = "1234"; //TODO: REMOVE
         }
 
         // GET: Login
@@ -36,16 +35,17 @@ namespace ShikShaq.Controllers
 
                 if (user == null)
                 {
-                    ViewData["loginError"] = "User does not exist!";
+                    ModelState.AddModelError("UserNotExist", "User does not exist!");
                 } else
                 {
-                    ViewData["loginError"] = "";
+                    Session["userId"] = user.id;
+                    return RedirectToAction("Index", "Home");
                 }
             }
 
 
 
-            return RedirectToAction("Index");
+            return View("Index");
         }
     }
 }
