@@ -22,7 +22,7 @@ namespace ShikShaq.Controllers
         // GET: Orders
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Order.ToListAsync());
+            return View(await _context.Order.Include(o => o.User).Include(o=> o.Branch).ToListAsync());
         }
 
         // GET: Orders/Details/5
@@ -33,7 +33,7 @@ namespace ShikShaq.Controllers
                 return NotFound();
             }
 
-            var order = await _context.Order
+            var order = await _context.Order.Include(o => o.User).Include(o => o.Branch)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (order == null)
             {
@@ -46,6 +46,9 @@ namespace ShikShaq.Controllers
         // GET: Orders/Create
         public IActionResult Create()
         {
+            ViewBag.Users = new SelectList(_context.User.ToList(), "Id", "Name");
+            ViewBag.Branches = new SelectList(_context.Branch.ToList(), "Id", "Name");
+
             return View();
         }
 
@@ -54,10 +57,13 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,OrderDate")] Order order)
+        public async Task<IActionResult> Create([Bind("Id,OrderDate")] Order order, int UserId, int BranchId)
         {
             if (ModelState.IsValid)
             {
+                order.User = _context.User.First(u => u.Id == UserId);
+                order.Branch = _context.Branch.First(u => u.Id == BranchId);
+
                 _context.Add(order);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -68,6 +74,11 @@ namespace ShikShaq.Controllers
         // GET: Orders/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+
+            ViewBag.Users = new SelectList(_context.User.ToList(), "Id", "Name");
+            ViewBag.Branches = new SelectList(_context.Branch.ToList(), "Id", "Name");
+
+
             if (id == null)
             {
                 return NotFound();
@@ -86,7 +97,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,OrderDate")] Order order)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,OrderDate")] Order order, int UserId, int BranchId)
         {
             if (id != order.Id)
             {
@@ -97,6 +108,10 @@ namespace ShikShaq.Controllers
             {
                 try
                 {
+                    order.User = _context.User.First(u => u.Id == UserId);
+                    order.Branch = _context.Branch.First(u => u.Id == BranchId);
+
+
                     _context.Update(order);
                     await _context.SaveChangesAsync();
                 }
