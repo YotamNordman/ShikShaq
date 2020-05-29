@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<link href="~/CSS/login.css" rel="stylesheet" type="text/css">
+
 
 @using (Html.BeginForm("Index", "Login", FormMethod.Post))
 {
@@ -21,5 +21,10 @@
             </form>
         </section>
     </section>
+}
+
+@section Styles
+{
+    <link href="~/css/login.css" rel="stylesheet" type="text/css">
 }
 
