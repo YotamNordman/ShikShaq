@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using ShikShaq.Data;
 
 namespace ShikShaq
 {
@@ -33,6 +35,9 @@ namespace ShikShaq
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<ShikShaqContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("ShikShaqContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
