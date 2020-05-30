@@ -1,13 +1,11 @@
 ﻿@model WebApplication1.Models.User
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Login";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
-
-@using (Html.BeginForm("Index", "Login", FormMethod.Post))
+@using (Html.BeginForm("Login", "Account", FormMethod.Post))
 {
     <section class="login-page">
         <section class="form">
@@ -27,4 +25,5 @@
 {
     <link href="~/css/login.css" rel="stylesheet" type="text/css">
 }
+
 
