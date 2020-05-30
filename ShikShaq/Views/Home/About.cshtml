@@ -1,12 +1,24 @@
 ﻿@{
     ViewData["Title"] = "Shik-Shaq";
 }
-    <h3><b>@ViewData["Title"]</b>, it's about you becoming greater and stronger!</h3>
-<br/>
+<h3><b>@ViewData["Title"]</b>, it's about you becoming greater and stronger!</h3>
+<br />
 <p>We, in ShikShaq, truly believe that you can maximize yourself, through our intense and dedicated training programs.</p>
 <p>Feel free to consult our experienced coaches and to buy quality products on our website!</p>
-<br/><br />
-    
-    
-<b><p>Look at one of our students plays</p></b>
-<video id="videoplayer" src="@Url.Content("~/videos/about-video.mp4")" controls="true" width="440" height="250" loop />
+<br />
+<br />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <p><b>Look at one of our students plays</b></p>
+            <video id="videoplayer" src="@Url.Content("~/videos/about-video.mp4")" controls style="width:100%;height:100%;" loop />
+        </div>
+        <div class="col-md-6">
+            <p><b>Check out our branches locations</b></p>
+            <div id="map" style="width: 400px; height: 300px"></div>>
+        </div>       
+    </div>
+</div>
+
+
+
