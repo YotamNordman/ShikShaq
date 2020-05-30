@@ -42,8 +42,11 @@
                 <li class="dropdown">
                     <a href="#" class="trigger-drop">Administration<i class="arrow"></i></a>
                     <ul class="drop">
-                        <li><a href="#">Manage Users</a></li>
-                        <li><a href="#">Manage Products</a></li>
+                        <li><a href="/users">Manage Users</a></li>
+                        <li><a href="/products">Manage Products</a></li>
+                        <li><a href="/orders">Manage Orders</a></li>
+                        <li><a href="/branches">Manage Branches</a></li>
+                        <li><a href="/tags">Manage Tags</a></li>
                         <li><a href="#">Statistics</a></li>
                     </ul>
                 </li>
@@ -75,7 +78,7 @@
 
     <partial name="_CookieConsentPartial" />
 
-    <div class="container body-content">
+    <div class="container body-content" style="max-width:100%">
         @RenderBody()
         <hr />
         <footer>
