@@ -25,6 +25,19 @@ namespace ShikShaq.Controllers
             return View(await _context.ProductTag.ToListAsync());
         }
 
+        public async Task<IActionResult> Search(string name)
+        {
+            var productTagsList = _context.ProductTag.ToListAsync();
+
+            if (name != null)
+            {
+                productTagsList = _context.ProductTag.Where(tag => tag.Tag.Name.ToLower().Contains(name.ToLower())).ToListAsync();
+
+            }
+
+            return View("Index", await productTagsList);
+        }
+
         // GET: ProductTags/Details/5
         public async Task<IActionResult> Details(int? id)
         {
