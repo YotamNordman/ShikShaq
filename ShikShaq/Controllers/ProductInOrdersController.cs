@@ -25,6 +25,14 @@ namespace ShikShaq.Controllers
             return View(await _context.ProductInOrder.ToListAsync());
         }
 
+        public async Task<IActionResult> Search(int quantity)
+        {
+            var productsInOrderList = _context.ProductInOrder.Where(product => product.Quantity == quantity).ToListAsync();
+
+            return View("Index", await productsInOrderList);
+        }
+
+
         // GET: ProductInOrders/Details/5
         public async Task<IActionResult> Details(int? id)
         {

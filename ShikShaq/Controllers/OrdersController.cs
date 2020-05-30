@@ -25,6 +25,18 @@ namespace ShikShaq.Controllers
             return View(await _context.Order.Include(o => o.User).Include(o=> o.Branch).ToListAsync());
         }
 
+
+        public async Task<IActionResult> Search(DateTime orderDate)
+        {          
+               var ordersList = _context.Order.
+                    Where(order => order.OrderDate.Date == orderDate.Date)
+                    .Include(o => o.User).Include(o => o.Branch).ToListAsync();
+
+            
+
+            return View("Index", await ordersList);
+        }
+
         // GET: Orders/Details/5
         public async Task<IActionResult> Details(int? id)
         {

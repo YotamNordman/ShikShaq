@@ -25,6 +25,19 @@ namespace ShikShaq.Controllers
             return View(await _context.Branch.ToListAsync());
         }
 
+        public async Task<IActionResult> Search(string name)
+        {
+            var branchsList = _context.Branch.ToListAsync();
+
+            if (name != null)
+            {
+                branchsList = _context.Branch.Where(branch => branch.Name.ToLower().Contains(name.ToLower())).ToListAsync();
+
+            }
+
+            return View("Index", await branchsList);
+        }
+
         // GET: Branches/Details/5
         public async Task<IActionResult> Details(int? id)
         {

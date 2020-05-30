@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -23,6 +24,22 @@ namespace ShikShaq.Controllers
         public async Task<IActionResult> Index()
         {
             return View(await _context.Product.ToListAsync());
+        }
+
+        public async Task<IActionResult> Search(string name, string description, string color, string price)
+        {
+            var productsList = _context.Product.ToListAsync();
+
+            if (name != null && description !=null && color!=null && price!= null)
+            {
+                productsList = _context.Product.Where(product => product.Name.ToLower().Contains(name.ToLower()))
+                    .Where(product => product.Description.ToLower().Contains(description.ToLower()))
+                    .Where(product => product.Color.ToLower().Contains(color.ToLower()))
+                    .Where(product => product.Price.ToLower().Contains(price.ToLower()))
+                    .ToListAsync();
+            }
+
+            return View("Index", await productsList);
         }
 
         // GET: Products/Details/5

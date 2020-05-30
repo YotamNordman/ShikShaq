@@ -25,6 +25,22 @@ namespace ShikShaq.Controllers
             return View(await _context.User.ToListAsync());
         }
 
+        public async Task<IActionResult> Search(string name, string address, float height)
+        {
+            var usersList = _context.User.ToListAsync();
+
+            if (name != null && address!=null)
+            {
+                usersList = _context.User.Where(user => user.Name.ToLower().Contains(name.ToLower())).
+                    Where(user => user.Address.ToLower().Contains(address.ToLower())).
+                    Where(user => user.Height == height)
+                    .ToListAsync();
+
+            }
+
+            return View("Index", await usersList);
+        }
+
         // GET: Users/Details/5
         public async Task<IActionResult> Details(int? id)
         {
