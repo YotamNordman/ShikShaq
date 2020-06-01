@@ -16,9 +16,24 @@
         <div class="col-md-6">
             <p><b>Check out our branches locations</b></p>
             <div id="map" style="width: 400px; height: 300px"></div>>
-        </div>       
+        </div>
     </div>
 </div>
 
+@section Scripts
+{
+    <script>
+        var map;
+        function initMap() {
+            // Center map at college of management
+            mapCenter = { lat: 31.969738, lng: 34.7749759 };
 
-
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: mapCenter,
+                zoom: 12
+            });
+        };
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYy3vaPn7Dnb994s30XZHwqj2hdqXqTv4&callback=initMap"
+            async defer></script>
+}
