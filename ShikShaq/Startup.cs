@@ -11,7 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using ShikShaq.Data;
-
+using Microsoft.AspNetCore.Authentication.Cookies;
 namespace ShikShaq
 {
     public class Startup
@@ -35,6 +35,8 @@ namespace ShikShaq
 
             services.AddDistributedMemoryCache();
             services.AddSession();
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).
+                AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, (options) => {});
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
@@ -61,6 +63,7 @@ namespace ShikShaq
             app.UseCookiePolicy();
 
             app.UseSession();
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {
