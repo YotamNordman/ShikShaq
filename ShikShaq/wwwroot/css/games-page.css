@@ -1,0 +1,11 @@
+﻿.centered-column {
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.resizable-image {
+    margin: auto;
+    display: block;
+    padding-top: 7%;
+}
