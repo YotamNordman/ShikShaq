@@ -1,0 +1,18 @@
+﻿@model List<WebApplication1.Models.Order>
+
+@{
+    ViewData["Title"] = "Orders";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var order in Model)
+{
+    @Html.DisplayFor(modelItem => order.OrderDate)
+    <br />
+    @Html.DisplayFor(modelItem => order.User.Name)
+    <br />
+    @Html.DisplayFor(modelItem => order.Branch.Name)
+    <br />
+  
+}
+
