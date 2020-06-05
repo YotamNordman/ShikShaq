@@ -7,6 +7,9 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using ShikShaq.Data;
+using Microsoft.Extensions.DependencyInjection;
+using ShikShaq.Migrations;
 
 namespace ShikShaq
 {
@@ -14,7 +17,14 @@ namespace ShikShaq
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            var host = CreateWebHostBuilder(args).Build();
+            var scope = host.Services.CreateScope();
+            var services = scope.ServiceProvider;
+            
+            var context = services.GetRequiredService<ShikShaqContext>();
+            DBPopulator.Populate(context);
+            host.Run();
+
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
