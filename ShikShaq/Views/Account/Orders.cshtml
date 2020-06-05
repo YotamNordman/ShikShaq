@@ -5,14 +5,48 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@foreach (var order in Model)
+    <section>
+
+        <div class="row text-center text-white mb-5">
+            <div class="col-lg-7 mx-auto">
+                <h1 class="display-4">My Orders</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <ul class="list-group shadow">
+
+                    @foreach (var order in Model)
+                    {
+                        <li class="list-group-item">
+                            <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                                <div class="media-body order-2 order-lg-1">
+                                    <h5 class="mt-0 font-weight-bold mb-2"> order number: @order.Id</h5>
+                                    <p class="font-italic text-muted mb-0 small">orderd at: @order.OrderDate in branch @order.Branch.Name</p>
+                                    <div class="d-flex align-items-center justify-content-between mt-1">
+                                        <h6 class="font-weight-bold my-2">@order.FinalPrice &#8362;</h6>
+
+                                        <!-- Share Button-->
+                                        <div class="fb-share-button float-right" data-href="https://megasport.co.il/" data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmegasport.co.il%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </li>
+                    }
+
+                </ul> 
+            </div>
+        </div>
+
+           
+
+                
+
+    </section>
+
+@section Styles
 {
-    @Html.DisplayFor(modelItem => order.OrderDate)
-    <br />
-    @Html.DisplayFor(modelItem => order.User.Name)
-    <br />
-    @Html.DisplayFor(modelItem => order.Branch.Name)
-    <br />
-  
+    <link href="~/css/my-orders.css" rel="stylesheet" type="text/css">
 }
 

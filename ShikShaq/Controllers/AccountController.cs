@@ -100,7 +100,6 @@ namespace ShikShaq.Controllers
                                      select order;
 
                 orders = await userOrderQuery
-                    .Include(o => o.User)
                     .Include(o => o.Branch)
                     .Include(o => o.ProductInOrders).ThenInclude(pio => pio.Product)
                     .ToListAsync();
