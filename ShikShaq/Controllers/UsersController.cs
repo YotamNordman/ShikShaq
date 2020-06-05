@@ -59,6 +59,24 @@ namespace ShikShaq.Controllers
             return View(user);
         }
 
+        // GET: Users/UserDetails/5
+        public async Task<IActionResult> SimpleUserDetails(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _context.User
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return View(user);
+        }
+
         // GET: Users/Create
         public IActionResult Create()
         {
@@ -97,6 +115,8 @@ namespace ShikShaq.Controllers
             return View(user);
         }
 
+
+
         // POST: Users/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
@@ -128,6 +148,59 @@ namespace ShikShaq.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
+            }
+            return View(user);
+        }
+
+
+        // GET: Users/SimpleUserEdit/5
+        public async Task<IActionResult> SimpleUserEdit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var user = await _context.User.FindAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return View(user);
+        }
+
+        // POST: Users/SimpleUserEdit/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> SimpleUserEdit(int id, [Bind("Id,Name,Email,Birthday,Address,Height,Weight,Password,IsAdmin")] User user)
+        {
+            if (id != user.Id)
+            {
+                return NotFound();
+            }
+
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(user);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!UserExists(user.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction("Details", user);
             }
             return View(user);
         }
