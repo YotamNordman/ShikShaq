@@ -88,5 +88,25 @@ namespace ShikShaq.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        public async Task<ActionResult> Orders()
+        {
+            int? userId = HttpContext.Session.GetInt32("userId");
+            List<Order> orders = new List<Order>();
+
+            if (userId != null && userId >= 0)
+            {
+                var userOrderQuery = from order in _context.Order
+                                     where order.User.Id == userId
+                                     select order;
+
+                orders = await userOrderQuery
+                    .Include(o => o.Branch)
+                    .Include(o => o.ProductInOrders).ThenInclude(pio => pio.Product)
+                    .ToListAsync();
+            }
+
+            return View(orders);
+        }
+
     }
 }

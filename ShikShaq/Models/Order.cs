@@ -15,6 +15,8 @@ namespace WebApplication1.Models
 
         public Branch Branch { get; set; }
 
+        public float FinalPrice { get; set; }
+
         public ICollection<ProductInOrder> ProductInOrders { get; set; }
     }
 }
