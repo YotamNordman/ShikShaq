@@ -169,6 +169,38 @@ label {
         background-color: #494;
     }
 
+.save {
+    float: right;
+    border: 0;
+    margin-top: 20px;
+    padding: 6px 25px;
+    background-color: #e8bf4e;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+    .save:hover {
+        background-color: #c29518;
+    }
+
+.clear {
+    float: right;
+    border: 0;
+    margin-top: 20px;
+    padding: 6px 25px;
+    background-color: #d56767;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+    .clear:hover {
+        background-color: #a44;
+    }
+
 /* Make adjustments for tablet */
 @media screen and (max-width: 650px) {
     .shopping-cart {
