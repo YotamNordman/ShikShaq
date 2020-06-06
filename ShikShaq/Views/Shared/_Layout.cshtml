@@ -1,4 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Http;
+@using System.Security.Claims
 
 <!DOCTYPE html>
 <html>
@@ -6,9 +7,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - ShikShaq</title>
+    <meta property="og:url" content="https://localhost:44318/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Just Ordered In Shik Shaq Sport Store!" />
+    <meta property="og:description" content="If you want to be healty, come to Shik Shaq Store!" />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sport_balls.svg/400px-Sport_balls.svg.png" />
 
     <link href="~/css/main.css" rel="stylesheet" type="text/css">
     <link href="~/css/navbar.css" rel="stylesheet" type="text/css">
+
+    <!-- Facebook Featchers -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
 
 
     <environment include="Development">
@@ -26,6 +35,7 @@
     <nav id="navigation">
         <a href="#" class="logo">Shik Shaq</a>
         <ul class="links">
+            <li class="dropdown"><a href="/games" class="trigger-drop">Scores</a></li>
             <li class="dropdown"><a href="/home/about" class="trigger-drop">About</a></li>
             <li class="dropdown">
                 <a href="#" class="trigger-drop">Products<i class="arrow"></i></a>
@@ -37,38 +47,38 @@
 
             @{ string isAdmin = Context.Session.GetString("isUserAdmin"); }
 
-            @if (isAdmin != null && isAdmin.Equals("Y"))
+            @if (isAdmin != null && isAdmin.Equals("Y") && User.Identity.IsAuthenticated && User.HasClaim(ClaimTypes.Role, "Admin"))
             {
-            <li class="dropdown">
-                <a href="#" class="trigger-drop">Administration<i class="arrow"></i></a>
-                <ul class="drop">
-                    <li><a href="/users">Manage Users</a></li>
-                    <li><a href="/products">Manage Products</a></li>
-                    <li><a href="/orders">Manage Orders</a></li>
-                    <li><a href="/branches">Manage Branches</a></li>
-                    <li><a href="/tags">Manage Tags</a></li>
-                    <li><a href="#">Statistics</a></li>
-                </ul>
-            </li>
+                <li class="dropdown">
+                    <a href="#" class="trigger-drop">Administration<i class="arrow"></i></a>
+                    <ul class="drop">
+                        <li><a href="/users">Manage Users</a></li>
+                        <li><a href="/products">Manage Products</a></li>
+                        <li><a href="/orders">Manage Orders</a></li>
+                        <li><a href="/branches">Manage Branches</a></li>
+                        <li><a href="/tags">Manage Tags</a></li>
+                        <li><a asp-controller="Statistics" asp-action="Index" method="get">Statistics</a></li>
+                    </ul>
+                </li>
             }
 
             @{ int? userId = Context.Session.GetInt32("userId"); }
 
             @if (userId > 0)
             {
-            <li class="dropdown">
-                <a href="#" class="trigger-drop">Account<i class="arrow"></i></a>
-                <ul class="drop">
-                    <li><a href="/users/Details/@userId">My Details</a></li>
-                    <li><a href="#">My Cart</a></li>
-                    <li><a href="#">My Orders</a></li>
-                    <li><a asp-controller="Account" asp-action="Logout" method="get">Logout</a></li>
-                </ul>
-            </li>
+                <li class="dropdown">
+                    <a href="#" class="trigger-drop">Account<i class="arrow"></i></a>
+                    <ul class="drop">
+                        <li><a href="/users/SimpleUserDetails/@userId">My Details</a></li>
+                        <li><a href="#">My Cart</a></li>
+                        <li><a asp-controller="Account" asp-action="Orders" method="get">My Orders</a></li>
+                        <li><a asp-controller="Account" asp-action="Logout" method="get">Logout</a></li>
+                    </ul>
+                </li>
             }
             else
             {
-            <li class="dropdown"><a asp-controller="Account" asp-action="Login" method="get" class="trigger-drop">Login</a></li>
+                <li class="dropdown"><a asp-controller="Account" asp-action="Login" method="get" class="trigger-drop">Login</a></li>
             }
 
 
@@ -83,27 +93,19 @@
         <hr />
         <footer>
             <p>&copy; 2020 - ShikShaq</p>
+            <div id="fb-root"></div>
+
+            <p>Like our facebook page: </p><div class="fb-like" data-href="https://www.facebook.com/nba" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="false"></div>
         </footer>
     </div>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
+        <link href="~/lib/jquery-data/dist/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
+        <script src="~/lib/jquery-data/dist/jquery.dataTables.min.js"></script>
+
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
-        <script>
-            var map;
-            function initMap() {
-                // Center map at college of management
-                mapCenter = { lat: 31.969738, lng: 34.7749759 };
-
-                map = new google.maps.Map(document.getElementById('map'), {
-                    center: mapCenter,
-                    zoom: 12
-                });
-            }; 
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYy3vaPn7Dnb994s30XZHwqj2hdqXqTv4&callback=initMap"
-                async defer></script>
     </environment>
     <environment exclude="Development">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"

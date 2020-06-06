@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ShikShaq.Data;
 
 namespace ShikShaq.Migrations
 {
     [DbContext(typeof(ShikShaqContext))]
-    partial class ShikShaqContextModelSnapshot : ModelSnapshot
+    [Migration("20200605161845_AddFinalPriceToOrder")]
+    partial class AddFinalPriceToOrder
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -206,8 +208,6 @@ namespace ShikShaq.Migrations
                     b.HasOne("WebApplication1.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
-                    //Yotam Added this cause db didnt match(cant init db with the FinalPrice attribute)
-                    b.Property<float>("FinalPrice");
                 });
 
             modelBuilder.Entity("WebApplication1.Models.ProductInBranch", b =>

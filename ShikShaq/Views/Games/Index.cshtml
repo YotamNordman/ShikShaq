@@ -1,0 +1,86 @@
+﻿@{
+    ViewData["Title"] = "Premier League Scores";
+}
+<h3><b>@ViewData["Title"]</b></h3>
+<div class="container-fluid">
+    <div class="row">
+        <div id="div_Loader" class="col d-flex align-items-center justify-content-center">
+            <img class="resizable-image" src="@Url.Content("~/gif/loading.gif")" alt="loader" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table id="scoresTable" class="table table-striped table-bordered" style="width:100%">
+            </table>
+        </div>
+    </div>
+</div>
+@section Scripts
+{
+    <link href="~/css/games-page.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+        var $;
+
+        function Show() {
+            $('#div_Loader').show();
+        }
+
+        function Hide() {
+            $('#div_Loader').hide();
+        }
+
+        function getScores() {
+            $.ajax({
+                type: "GET",
+                url: 'Games/Scores',
+                data: {},
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                beforeSend: function () {
+                    Show(); // Show loader icon
+                },
+                success: function (response) {
+                    columns = [
+                        { title: "Date" },
+                        { title: "Home Team" },
+                        { title: "Away Team" },
+                        { title: "Score" },
+                        { title: "Status" }
+                    ];
+
+                    scoresDatasource = [];
+
+                    for (index in response.api.fixtures) {
+                        var fixture = response.api.fixtures[index];
+                        scoresDatasource.push([
+                            new Date(fixture.event_date).toLocaleString(),
+                            fixture.homeTeam.team_name,
+                            fixture.awayTeam.team_name,
+                            fixture.score.fulltime,
+                            fixture.status
+                        ]);
+                    }
+
+                    $('#scoresTable').DataTable({
+                        data: scoresDatasource,
+                        columns: columns
+                    });
+                },
+                complete: function () {
+                    Hide(); // Hide loader ic
+                },
+                failure: function (jqXHR, textStatus, errorThrown) {
+                    alert("HTTP Status: " + jqXHR.status + "; Error Text: " + jqXHR.responseText); // Display error message
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            $("#div_Loader").show();
+            setTimeout(() => {
+                getScores();
+            }, 2000);
+        });
+    </script>
+}
