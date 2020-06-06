@@ -135,7 +135,9 @@ namespace ShikShaq.Migrations
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     UserId = table.Column<int>(nullable: true),
                     OrderDate = table.Column<DateTime>(nullable: false),
-                    BranchId = table.Column<int>(nullable: true)
+                    BranchId = table.Column<int>(nullable: true),
+                    //Yotam Added this cause final price could be initialized
+                    FinalPrice =  table.Column<float>(nullable: true)
                 },
                 constraints: table =>
                 {

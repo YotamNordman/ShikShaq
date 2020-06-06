@@ -206,6 +206,8 @@ namespace ShikShaq.Migrations
                     b.HasOne("WebApplication1.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
+                    //Yotam Added this cause db didnt match(cant init db with the FinalPrice attribute)
+                    b.Property<float>("FinalPrice");
                 });
 
             modelBuilder.Entity("WebApplication1.Models.ProductInBranch", b =>
