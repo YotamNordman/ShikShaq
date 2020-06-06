@@ -16,8 +16,7 @@ namespace WebApplication1.Models
         [StringLength(45)]
         public string Description { get; set; }
 
-        [StringLength(45)]
-        public string Price { get; set; }
+        public float Price { get; set; }
 
         [StringLength(45)]
         public string Color { get; set; }

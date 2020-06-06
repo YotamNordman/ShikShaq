@@ -29,5 +29,7 @@ namespace ShikShaq.Data
         public DbSet<WebApplication1.Models.Tag> Tag { get; set; }
 
         public DbSet<WebApplication1.Models.User> User { get; set; }
+
+        public DbSet<WebApplication1.Models.CartItem> CartItem { get; set; }
     }
 }

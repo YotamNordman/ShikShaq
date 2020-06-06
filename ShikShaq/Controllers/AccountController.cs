@@ -108,5 +108,33 @@ namespace ShikShaq.Controllers
             return View(orders);
         }
 
+        public async Task<ActionResult> Cart()
+        {
+            int? userId = HttpContext.Session.GetInt32("userId");
+            List<CartItem> cartItems = new List<CartItem>();
+
+            if (userId != null && userId >= 0)
+            {
+                var userCartItemsQuery =   from item in _context.CartItem
+                                            where item.User.Id == userId
+                                            select item;
+
+                cartItems = await userCartItemsQuery
+                    .Include(ci => ci.Product)
+                    .ToListAsync();
+            }
+
+            float totalPrice = 0;
+            foreach (CartItem ci in cartItems)
+            {
+                totalPrice += (ci.Product.Price * ci.Quantity);
+            }
+
+            ViewBag.totalPrice = totalPrice;
+
+
+            return View(cartItems);
+        }
+
     }
 }
