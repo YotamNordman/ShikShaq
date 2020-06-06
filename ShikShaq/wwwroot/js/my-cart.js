@@ -13,6 +13,10 @@ $('.product-removal button').click(function () {
     removeItem(this);
 });
 
+$('.clear').click(function () {
+    removeAllItems(this);
+});
+
 
 /* Recalculate cart */
 function recalculateCart() {
@@ -70,5 +74,12 @@ function removeItem(removeButton) {
     productRow.slideUp(fadeTime, function () {
         productRow.remove();
         recalculateCart();
+    });
+}
+
+/* Remove all items from cart */
+function removeAllItems() {
+    $('.remove-product').each(function () {
+        removeItem($(this));
     });
 }
