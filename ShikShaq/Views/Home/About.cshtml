@@ -1,15 +1,42 @@
 ﻿@{
     ViewData["Title"] = "Shik-Shaq";
 }
-<canvas id="titleCanvas" width="300" height="100">
-    Your browser does not support the HTML5 canvas tag.
-</canvas>
-<h3>it's about you becoming greater and stronger!</h3>
+<link href="~/css/about.css" rel="stylesheet" type="text/css">
+
+<style>
+    .rounded-border {
+        border: 2px solid #90caf9;
+        padding: 10px;
+        border-radius: 25px;
+    }
+</style>
+<header>
+    <canvas id="titleCanvas" width="300" height="100">
+        Your browser does not support the HTML5 canvas tag.
+    </canvas>
+    <h3>it's about you becoming greater and stronger!</h3>
+</header>
 <br />
-<p>We, in ShikShaq, truly believe that you can maximize yourself, through our intense and dedicated training programs.</p>
-<p>Feel free to consult our experienced coaches and to buy quality products on our website!</p>
-<br />
-<br />
+<aside class="rounded-border">
+    <p>
+        S pecial products for
+        <br />
+        H ome
+        <br />
+        A nd
+        <br />
+        Q quarantine
+    </p>
+</aside>
+<div class="about-us">
+
+    <p>We, in ShikShaq, truly believe that you can maximize yourself, through our intense and dedicated training programs.</p>
+
+
+    <p>Feel free to consult our experienced coaches and to buy quality products on our website!</p>
+    <br />
+    <br />
+</div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-6">
@@ -26,85 +53,85 @@
 @section Scripts
 {
     <script>
-        var map;
-        initCanvas();
-        // Adds a marker to the map.
-        function addMarker(location, map, title) {
-            // Add the marker at the clicked location, and add the next-available label
-            // from the array of alphabetical characters.
-            var marker = new google.maps.Marker({
-                position: location,
-                animation: google.maps.Animation.DROP,
-                title: title,
-                map: map
-            });
+    var map;
+    initCanvas();
+    // Adds a marker to the map.
+    function addMarker(location, map, title) {
+        // Add the marker at the clicked location, and add the next-available label
+        // from the array of alphabetical characters.
+        var marker = new google.maps.Marker({
+            position: location,
+            animation: google.maps.Animation.DROP,
+            title: title,
+            map: map
+        });
 
-            marker.setMap(map);
-            marker.addListener('click', toggleBounce);
+        marker.setMap(map);
+        marker.addListener('click', toggleBounce);
+    }
+
+    function toggleBounce() {
+        if (this.getAnimation() !== null) {
+            this.setAnimation(null);
+        } else {
+            this.setAnimation(google.maps.Animation.BOUNCE);
         }
+    }
 
-        function toggleBounce() {
-            if (this.getAnimation() !== null) {
-                this.setAnimation(null);
-            } else {
-                this.setAnimation(google.maps.Animation.BOUNCE);
-            }
-        }
+    function initMap() {
+        // Center map at college of management
+        mapCenter = { lat: 31.969738, lng: 34.7749759 };
+        mapCenter2 = { lat: 31.979838, lng: 34.7648759 };
 
-        function initMap() {
-            // Center map at college of management
-            mapCenter = { lat: 31.969738, lng: 34.7749759 };
-            mapCenter2 = { lat: 31.979838, lng: 34.7648759 };
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: mapCenter,
+            zoom: 15
+        });
 
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: mapCenter,
-                zoom: 15
-            });
+        getBranchesLocations();
+    };
 
-            getBranchesLocations();
-        };
+    function getBranchesLocations() {
+        $.ajax({
+            type: "GET",
+            url: '../Branches/Location',
+            data: {},
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            beforeSend: function () {
+            },
+            success: function (response) {
+                var branchLocation = {};
+                for (branchIndex in response) {
+                    branchLocation = {
+                        lat: response[branchIndex].lat,
+                        lng: response[branchIndex].lng
+                    };
 
-        function getBranchesLocations() {
-            $.ajax({
-                type: "GET",
-                url: '../Branches/Location',
-                data: {},
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                beforeSend: function () {
-                },
-                success: function (response) {
-                    var branchLocation = {};
-                    for (branchIndex in response) {
-                        branchLocation = {
-                            lat: response[branchIndex].lat,
-                            lng: response[branchIndex].lng
-                        };
-
-                        addMarker(branchLocation, map, response[branchIndex].name);
-                    }
-                },
-                complete: function () {
-                },
-                failure: function (jqXHR, textStatus, errorThrown) {
-                    alert("HTTP Status: " + jqXHR.status + "; Error Text: " + jqXHR.responseText); // Display error message
+                    addMarker(branchLocation, map, response[branchIndex].name);
                 }
-            });
-        }
+            },
+            complete: function () {
+            },
+            failure: function (jqXHR, textStatus, errorThrown) {
+                alert("HTTP Status: " + jqXHR.status + "; Error Text: " + jqXHR.responseText); // Display error message
+            }
+        });
+    }
 
-        function initCanvas() {
-            var c = document.getElementById("titleCanvas");
-            var ctx = c.getContext("2d");
+    function initCanvas() {
+        var c = document.getElementById("titleCanvas");
+        var ctx = c.getContext("2d");
 
-            ctx.font = "55px Verdana";
-            // Create gradient
-            var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
-            gradient.addColorStop("0", "#090979");
-            gradient.addColorStop("1.0", "#00d4ff");
-            // Fill with gradient
-            ctx.fillStyle = gradient;
-            ctx.fillText("@ViewData["Title"]", 10, 90);
-        }
+        ctx.font = "55px Verdana";
+        // Create gradient
+        var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+        gradient.addColorStop("0", "#090979");
+        gradient.addColorStop("1.0", "#00d4ff");
+        // Fill with gradient
+        ctx.fillStyle = gradient;
+        ctx.fillText("@ViewData["Title"]", 10, 90);
+    }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYy3vaPn7Dnb994s30XZHwqj2hdqXqTv4&callback=initMap"
             async defer></script>
