@@ -55,12 +55,40 @@
 
             map = new google.maps.Map(document.getElementById('map'), {
                 center: mapCenter,
-                zoom: 12
+                zoom: 15
             });
 
-            addMarker(mapCenter, map, "b");
-            addMarker(mapCenter2, map, "a");
+            getBranchesLocations();
         };
+
+        function getBranchesLocations() {
+            $.ajax({
+                type: "GET",
+                url: '../Branches/Location',
+                data: {},
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                beforeSend: function () {
+                },
+                success: function (response) {
+                    console.log(response);
+                    var branchLocation = {};
+                    for (branchIndex in response) {
+                        branchLocation = {
+                            lat: response[branchIndex].lat,
+                            lng: response[branchIndex].lng
+                        };
+
+                        addMarker(branchLocation, map, response[branchIndex].name);
+                    }
+                },
+                complete: function () {
+                },
+                failure: function (jqXHR, textStatus, errorThrown) {
+                    alert("HTTP Status: " + jqXHR.status + "; Error Text: " + jqXHR.responseText); // Display error message
+                }
+            });
+        }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYy3vaPn7Dnb994s30XZHwqj2hdqXqTv4&callback=initMap"
             async defer></script>
