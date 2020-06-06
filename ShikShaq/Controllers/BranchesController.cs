@@ -25,6 +25,11 @@ namespace ShikShaq.Controllers
             return View(await _context.Branch.ToListAsync());
         }
 
+        public async Task<List<Branch>> Location()
+        {
+            return await _context.Branch.ToListAsync();
+        }
+
         public async Task<IActionResult> Search(string name)
         {
             var branchsList = _context.Branch.ToListAsync();
