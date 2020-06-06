@@ -83,25 +83,25 @@ namespace ShikShaq.Data
                     new Product{ 
                     Name = "Basketball ball",
                     Description = "Ball for basketball",
-                    Price = "9.90",
+                    Price = 9,
                     Color = "Orange"
                     },
                     new Product{
                     Name = "Football ball",
                     Description = "Ball for basketball",
-                    Price = "19.90",
+                    Price = 19,
                     Color = "Yellow"
                     },
                     new Product{
                     Name = "Hockey puck",
                     Description = "Size 2",
-                    Price = "29.90",
+                    Price = 29,
                     Color = "Black"
                     },
                     new Product{
                     Name = "Running shoes",
                     Description = "Nikey",
-                    Price = "99.90",
+                    Price = 99,
                     Color = "Black"
                     },
                 }
