@@ -1,7 +1,10 @@
 ﻿@{
     ViewData["Title"] = "Shik-Shaq";
 }
-<h3><b>@ViewData["Title"]</b>, it's about you becoming greater and stronger!</h3>
+<canvas id="titleCanvas" width="300" height="100">
+    Your browser does not support the HTML5 canvas tag.
+</canvas>
+<h3>it's about you becoming greater and stronger!</h3>
 <br />
 <p>We, in ShikShaq, truly believe that you can maximize yourself, through our intense and dedicated training programs.</p>
 <p>Feel free to consult our experienced coaches and to buy quality products on our website!</p>
@@ -24,7 +27,7 @@
 {
     <script>
         var map;
-
+        initCanvas();
         // Adds a marker to the map.
         function addMarker(location, map, title) {
             // Add the marker at the clicked location, and add the next-available label
@@ -87,6 +90,20 @@
                     alert("HTTP Status: " + jqXHR.status + "; Error Text: " + jqXHR.responseText); // Display error message
                 }
             });
+        }
+
+        function initCanvas() {
+            var c = document.getElementById("titleCanvas");
+            var ctx = c.getContext("2d");
+
+            ctx.font = "55px Verdana";
+            // Create gradient
+            var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+            gradient.addColorStop("0", "#090979");
+            gradient.addColorStop("1.0", "#00d4ff");
+            // Fill with gradient
+            ctx.fillStyle = gradient;
+            ctx.fillText("@ViewData["Title"]", 10, 90);
         }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYy3vaPn7Dnb994s30XZHwqj2hdqXqTv4&callback=initMap"
