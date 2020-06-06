@@ -14,7 +14,15 @@ $('.product-removal button').click(function () {
 });
 
 $('.clear').click(function () {
-    removeAllItems(this);
+    removeAllItems();
+});
+
+$('.checkout').click(function () {
+    checkoutOrder();
+});
+
+$('.save').click(function () {
+    saveChanges();
 });
 
 
@@ -82,4 +90,14 @@ function removeAllItems() {
     $('.remove-product').each(function () {
         removeItem($(this));
     });
+}
+
+/* Delete cart and create an order from it */
+function checkoutOrder() {
+    // TODO: delete cart and create an order from it
+}
+
+/* Saves the cart current state*/
+function saveChanges() {
+    // TODO: saves the cart current state
 }
