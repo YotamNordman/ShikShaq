@@ -30,3 +30,9 @@ h3:hover {
     column-count: 2;
     font-family: myFirstFont;
 }
+
+.rounded-border {
+    border: 2px solid #90caf9;
+    padding: 10px;
+    border-radius: 25px;
+}
