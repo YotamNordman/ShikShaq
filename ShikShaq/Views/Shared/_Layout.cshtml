@@ -70,7 +70,7 @@
                     <a href="#" class="trigger-drop">Account<i class="arrow"></i></a>
                     <ul class="drop">
                         <li><a href="/users/SimpleUserDetails/@userId">My Details</a></li>
-                        <li><a href="#">My Cart</a></li>
+                        <li><a asp-controller="Account" asp-action="Cart" method="get">My Cart</a></li>
                         <li><a asp-controller="Account" asp-action="Orders" method="get">My Orders</a></li>
                         <li><a asp-controller="Account" asp-action="Logout" method="get">Logout</a></li>
                     </ul>

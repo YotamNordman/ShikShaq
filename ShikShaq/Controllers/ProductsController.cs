@@ -35,7 +35,7 @@ namespace ShikShaq.Controllers
                 productsList = _context.Product.Where(product => product.Name.ToLower().Contains(name.ToLower()))
                     .Where(product => product.Description.ToLower().Contains(description.ToLower()))
                     .Where(product => product.Color.ToLower().Contains(color.ToLower()))
-                    .Where(product => product.Price.ToLower().Contains(price.ToLower()))
+                    .Where(product => product.Price.ToString().ToLower().Contains(price.ToLower()))
                     .ToListAsync();
             }
 

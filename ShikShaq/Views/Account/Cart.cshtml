@@ -1,0 +1,80 @@
+﻿@model IEnumerable<WebApplication1.Models.CartItem>
+
+@{
+    ViewData["Title"] = "Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@foreach (var item in Model)
+{
+
+    @Html.DisplayFor(modelItem => item.Id)
+    @Html.DisplayFor(modelItem => item.Quantity)
+
+}
+
+
+<h1>Shopping Cart</h1>
+
+<section class="shopping-cart">
+
+    <div class="column-labels">
+        <label class="product-image">Image</label>
+        <label class="product-details">Product</label>
+        <label class="product-price">Price</label>
+        <label class="product-quantity">Quantity</label>
+        <label class="product-removal">Remove</label>
+        <label class="product-line-price">Total</label>
+    </div>
+
+    @foreach (var item in Model)
+    {
+
+        <div class="product">
+            <div class="product-image">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71kjs9OiBdL._AC_SL1150_.jpg">
+            </div>
+            <div class="product-details">
+                <div class="product-title">@item.Product.Name</div>
+                <p class="product-description">@item.Product.Description</p>
+            </div>
+            <div class="product-price">@item.Product.Price</div>
+            <div class="product-quantity">
+                <input type="number" value="@item.Quantity" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
+                </button>
+            </div>
+            <div class="product-line-price">@(item.Quantity * item.Product.Price)</div>
+        </div>
+
+    }
+
+    <div class="totals">
+        <div class="totals-item">
+            <label>Subtotal</label>
+            <div class="totals-value" id="cart-subtotal">@ViewBag.totalPrice</div>
+        </div>
+    </div>
+
+    <button class="checkout">Checkout</button>
+    <button class="save">Save Changes</button>
+    <button class="clear">Clear Cart</button>
+
+</section>
+
+
+
+
+@section Styles
+{
+    <link href="~/css/my-cart.css" rel="stylesheet" type="text/css">
+}
+
+@section Scripts
+{
+    <script src="~/js/my-cart.js"></script>
+}
