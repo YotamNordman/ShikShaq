@@ -85,7 +85,7 @@ namespace ShikShaq.Controllers
 
             // Clearing the Authentication Cookies
             HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "Products");
         }
 
         public async Task<ActionResult> Orders()
