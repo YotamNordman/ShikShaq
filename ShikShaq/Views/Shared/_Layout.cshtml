@@ -13,9 +13,10 @@
     <meta property="og:description" content="If you want to be healty, come to Shik Shaq Store!" />
     <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sport_balls.svg/400px-Sport_balls.svg.png" />
 
-    <link href="~/css/main.css" rel="stylesheet" type="text/css">
+    
     <link href="~/css/navbar.css" rel="stylesheet" type="text/css">
 
+    <script src="~/js/navbar.js"></script>
     <!-- Facebook Featchers -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
 
@@ -32,63 +33,88 @@
     </environment>
 </head>
 <body>
-    <nav id="navigation">
-        <a href="#" class="logo">Shik Shaq</a>
-        <ul class="links">
-            <li class="dropdown"><a href="/games" class="trigger-drop">Scores</a></li>
-            <li class="dropdown"><a href="/home/about" class="trigger-drop">About</a></li>
-            <li class="dropdown">
-                <a href="#" class="trigger-drop">Products<i class="arrow"></i></a>
-                <ul class="drop">
-                    <li><a href="#">All Products</a></li>
-                    <li><a href="#">Find Product</a></li>
-                </ul>
-            </li>
-
-            @{ string isAdmin = Context.Session.GetString("isUserAdmin"); }
-
-            @if (isAdmin != null && isAdmin.Equals("Y") && User.Identity.IsAuthenticated && User.HasClaim(ClaimTypes.Role, "Admin"))
-            {
+    <!--
+        <nav id="navigation">
+            <a href="#" class="logo">Shik Shaq</a>
+            <ul class="links">
+                <li class="dropdown"><a href="/games" class="trigger-drop">Scores</a></li>
+                <li class="dropdown"><a href="/home/about" class="trigger-drop">About</a></li>
                 <li class="dropdown">
-                    <a href="#" class="trigger-drop">Administration<i class="arrow"></i></a>
+                    <a href="#" class="trigger-drop">Products<i class="arrow"></i></a>
                     <ul class="drop">
-                        <li><a href="/users">Manage Users</a></li>
-                        <li><a href="/products">Manage Products</a></li>
-                        <li><a href="/orders">Manage Orders</a></li>
-                        <li><a href="/branches">Manage Branches</a></li>
-                        <li><a href="/tags">Manage Tags</a></li>
-                        <li><a asp-controller="Statistics" asp-action="Index" method="get">Statistics</a></li>
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">Find Product</a></li>
                     </ul>
                 </li>
-            }
 
-            @{ int? userId = Context.Session.GetInt32("userId"); }
+        </nav>
 
-            @if (userId > 0)
-            {
-                <li class="dropdown">
-                    <a href="#" class="trigger-drop">Account<i class="arrow"></i></a>
-                    <ul class="drop">
-                        <li><a href="/users/SimpleUserDetails/@userId">My Details</a></li>
-                        <li><a asp-controller="Account" asp-action="Cart" method="get">My Cart</a></li>
-                        <li><a asp-controller="Account" asp-action="Orders" method="get">My Orders</a></li>
-                        <li><a asp-controller="Account" asp-action="Logout" method="get">Logout</a></li>
-                    </ul>
-                </li>
-            }
-            else
-            {
-                <li class="dropdown"><a asp-controller="Account" asp-action="Login" method="get" class="trigger-drop">Login</a></li>
-            }
+    -->
 
+    <div class="topnav" id="myTopnav">
+        <a asp-controller="Home" asp-action="Index" class="active">SHIK SHAQ</a>
 
+        @{ int? userId = Context.Session.GetInt32("userId"); }
 
-        </ul>
-    </nav>
+        @if (userId > 0)
+        {
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Account
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="/users/SimpleUserDetails/@userId" method="get">My Details</a>
+                    <a asp-controller="Account" asp-action="Cart" method="get">My Cart</a>
+                    <a asp-controller="Account" asp-action="Orders" method="get">My Orders</a>
+                    <a asp-controller="Account" asp-action="Logout" method="get">Logout</a>
+                </div>
+            </div>
+        }
+        else
+        {
+            <a asp-controller="Account" asp-action="Login">Login</a>
+        }
+
+        @{ string isAdmin = Context.Session.GetString("isUserAdmin"); }
+
+        @if (isAdmin != null && isAdmin.Equals("Y") && User.Identity.IsAuthenticated && User.HasClaim(ClaimTypes.Role, "Admin"))
+        {
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Administration
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a asp-controller="Users" asp-action="Index" method="get">Manage Users</a>
+                    <a asp-controller="Products" asp-action="Index" method="get">Manage Products</a>
+                    <a asp-controller="Orders" asp-action="Index" method="get">Manage Orders</a>
+                    <a asp-controller="Branches" asp-action="Index" method="get">Manage Branches</a>
+                    <a asp-controller="Tags" asp-action="Index" method="get">Manage Tags</a>
+                    <a asp-controller="Statistics" asp-action="Index" method="get">Statistics</a>
+                </div>
+            </div>
+        }
+
+        <div class="dropdown">
+            <button class="dropbtn">
+                Products
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">All Products</a>
+                <a href="#">Find Product</a>
+            </div>
+        </div>
+
+        <a href="/games">Score</a>
+        <a href="/home/about">About</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
 
     <partial name="_CookieConsentPartial" />
 
-    <div class="container body-content" style="max-width:100%">
+    <div class="container body-content" style="max-width:100%; padding-top:50px">
         @RenderBody()
         <hr />
         <footer>
