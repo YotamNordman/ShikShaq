@@ -21,6 +21,8 @@ namespace WebApplication1.Models
         [StringLength(45)]
         public string Color { get; set; }
 
+        public byte [] Image { get; set; }
+
         public ICollection<ProductTag> ProductTags { get; set; }
 
         public ICollection<ProductInBranch> ProductInBranch { get; set; }
