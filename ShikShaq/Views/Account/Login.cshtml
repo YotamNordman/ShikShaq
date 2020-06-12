@@ -15,7 +15,7 @@
 
                 <button>login</button>
                 <p class="text-danger">@ViewBag.LoginErrorMessage</p>
-                <p class="message">Not registered? <a href="#">Create an account</a></p>
+                <p class="message">Not registered? <a asp-controller="Account" asp-action="SignUp" method="get">Create an account</a></p>
             </form>
         </section>
     </section>
