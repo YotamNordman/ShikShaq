@@ -90,13 +90,14 @@ namespace ShikShaq.Controllers
             if (ModelState.IsValid)
             {
 
-                foreach (var item in Image)
+                if (Image != null && Image.Count > 0)
                 {
-                    if (item.Length > 0)
+                    var img = Image.First();
+                    if (img.Length > 0)
                     {
                         using (var stream = new MemoryStream())
                         {
-                            await item.CopyToAsync(stream);
+                            await img.CopyToAsync(stream);
                             product.Image = stream.ToArray();
                         }
                     }
@@ -141,20 +142,17 @@ namespace ShikShaq.Controllers
             {
                 try
                 {
-
-                    if (Image != null)
+                    if (Image != null && Image.Count > 0)
                     {
-                        foreach (var item in Image)
-                        {
-                            if (item.Length > 0)
+                        var img = Image.First();
+                            if (img.Length > 0)
                             {
                                 using (var stream = new MemoryStream())
                                 {
-                                    await item.CopyToAsync(stream);
+                                    await img.CopyToAsync(stream);
                                     product.Image = stream.ToArray();
                                 }
                             }
-                        }
                     }
 
                     _context.Update(product);
