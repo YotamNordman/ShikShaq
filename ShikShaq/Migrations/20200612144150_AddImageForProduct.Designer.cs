@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ShikShaq.Data;
 
 namespace ShikShaq.Migrations
 {
     [DbContext(typeof(ShikShaqContext))]
-    partial class ShikShaqContextModelSnapshot : ModelSnapshot
+    [Migration("20200612144150_AddImageForProduct")]
+    partial class AddImageForProduct
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

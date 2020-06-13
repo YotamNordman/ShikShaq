@@ -1,4 +1,5 @@
 ﻿@model WebApplication1.Models.Product
+@using ShikShaq.Logic;
 
 @{
     ViewData["Title"] = "Details";
@@ -9,6 +10,7 @@
 <div>
     <h4>Product</h4>
     <hr />
+    @{var imgsrc = ProductImageSourceFetcher.Fetch(Model);} 
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.Name)
@@ -33,6 +35,12 @@
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Color)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+        <dd>
+           <img src="@imgsrc">
         </dd>
     </dl>
 </div>

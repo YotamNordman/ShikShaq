@@ -136,5 +136,57 @@ namespace ShikShaq.Controllers
             return View(cartItems);
         }
 
+        public ActionResult SignUp()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> SignUp(User userRegistration)
+        {
+            ViewBag.SignUpErrorMessage = "";
+
+            if(ModelState.IsValid)
+            {
+                if (userRegistration.Email == null || userRegistration.Email.Equals(""))
+                {
+                    ViewBag.SignUpErrorMessage = "Email cannot be empty!";
+                    return View();
+                }
+
+                var userFindQuery = from usr in _context.User
+                                    where usr.Email == userRegistration.Email
+                                    select usr;
+
+                User existUser = await userFindQuery.FirstOrDefaultAsync();
+
+                if (existUser != null)
+                {
+                    ViewBag.SignUpErrorMessage = "User with this email alreay exist! you must sign up with another one.";
+                    return View();
+                }
+
+                userRegistration.IsAdmin = "N";
+                return await InsertUser(userRegistration);
+            }
+
+            return View();
+        }
+
+        private async Task<ActionResult> InsertUser(User user)
+        {
+            try
+            {
+                _context.User.Add(user);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Login");
+            }
+            catch (Exception e)
+            {
+                ViewBag.SignUpErrorMessage = "Something happened while trying to create the user!";
+                return View("SignUp");
+            }
+        }
+
     }
 }
