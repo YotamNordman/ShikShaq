@@ -3,7 +3,17 @@
 @{
     ViewData["Title"] = "Details";
 }
-
+@section Styles
+{
+    <link href="~/css/details.css" rel="stylesheet" type="text/css">
+}
+@section Scripts
+{
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="~/js/viewBranchLocation.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYy3vaPn7Dnb994s30XZHwqj2hdqXqTv4&callback=initMap"
+            async defer></script>
+}
 <h2>Details</h2>
 
 <div>
@@ -31,23 +41,16 @@
         <dt>
             @Html.DisplayNameFor(model => model.Lat)
         </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Lat)
-        </dd>
+        <dd id="branchLat">@Html.DisplayFor(model => model.Lat)</dd>
         <dt>
             @Html.DisplayNameFor(model => model.Lng)
         </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Lng)
-        </dd>
+        <dd id="branchLng">@Html.DisplayFor(model => model.Lng)</dd>
     </dl>
+    <div id="map" style="width: 400px; height: 300px"></div>
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Styles
-{
-    <link href="~/css/details.css" rel="stylesheet" type="text/css">
-}
