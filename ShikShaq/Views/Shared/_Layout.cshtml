@@ -102,8 +102,9 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#">All Products</a>
-                <a href="#">Find Product</a>
+                <a asp-controller="Products" asp-action="Index" method="get">All Products</a>
+                <a asp-controller="Products" asp-action="Index" method="get">Find Products</a>
+                <a asp-controller="Statistics" asp-action="Index" method="get">Statistics</a>
             </div>
         </div>
 

@@ -1,40 +1,74 @@
 ﻿@model IEnumerable<WebApplication1.Models.Product>
 @using System.Security.Claims
+@using ShikShaq.Logic;
 @{
     ViewData["Title"] = "Index";
 }
 @{
     var productsArr = Model.ToArray();
 }
-@if (productsArr.Count() >= 5)
+@if (User.Identity.IsAuthenticated && User.HasClaim(ClaimTypes.Role, "Admin"))
 {
-    <div class="col-lg-9">
-        @for (var i = 0; i < productsArr.Count(); i += 3)
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+    <form asp-action="Search">
+        <div class="form-group">
+            <label class="control-label mr-2">Enter name</label>
+            <input name="name" class="form-control  mr-2" style="width:30%" />
+        </div>
+        <div class="form-group">
+            <label class="control-label mr-2">Enter description</label>
+            <input name="description" class="form-control  mr-2" style="width:30%" />
+        </div>
+        <div class="form-group">
+            <label class="control-label mr-2">Enter color</label>
+            <input name="color" class="form-control  mr-2" style="width:30%" />
+        </div>
+        <div class="form-group">
+            <label class="control-label mr-2">Enter price</label>
+            <input name="price" class="form-control  mr-2" style="width:30%" />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Search" class="btn btn-default" />
+        </div>
+
+    </form>
+<div class="col-lg-9">
+    @for (var i = 0; i < productsArr.Count(); i += 3)
+    {
+    <div class="row">
+        @for (var j = i; j < productsArr.Count() && j < (i + 3); j = j + 1)
         {
-            <div class="row">
-                @for (var j = i; j < productsArr.Count() && j < (i + 3); j = j + 1)
-                {
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100">
-                        <div class="thumbnail">
-                            <a asp-action="Details" asp-route-id="@productsArr[j].Id"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="card-title">
-                                <a asp-action="Details" asp-route-id="@productsArr[j].Id">@Html.DisplayFor(modelItem => productsArr[j].Name)</a>
-                            </h4>
-                            <h5>@Html.DisplayFor(modelItem => productsArr[j].Price)₪</h5>
-                            <p class="card-text">@Html.DisplayFor(modelItem => productsArr[j].Description)</p>
-                            <div class="card-footer">
-                                <small class="text-muted"><button class=" = btn btn-success"><a asp-action="Details" asp-route-id="@productsArr[j].Id">ADD TO CART</a></button></small>
-                            </div>
+            var imgsrc = ProductImageSourceFetcher.Fetch(productsArr[j]);
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="thumbnail">
+                        <a asp-action="Details" asp-route-id="@productsArr[j].Id"><img class="card-img-top" src=@imgsrc alt=""></a>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <a asp-action="Details" asp-route-id="@productsArr[j].Id">@Html.DisplayFor(modelItem => productsArr[j].Name)</a>
+                        </h4>
+                        <h5>@Html.DisplayFor(modelItem => productsArr[j].Price)₪</h5>
+                        <p class="card-text">@Html.DisplayFor(modelItem => productsArr[j].Description)</p>
+                        <div class="card-footer">
+                            @if (User.Identity.IsAuthenticated && User.HasClaim(ClaimTypes.Role, "Admin"))
+                            {
+                                <a asp-action="Edit" asp-route-id="@productsArr[j].Id">Edit</a>
+                                <a asp-action="Details" asp-route-id="@productsArr[j].Id">Details</a>
+                                <a asp-action="Delete" asp-route-id="@productsArr[j].Id">Delete</a>
+                            }
+                            <small class="text-muted"><button class=" = btn btn-success"><a asp-action="Details" asp-route-id="@productsArr[j].Id">ADD TO CART</a></button></small>
                         </div>
                     </div>
                 </div>
+            </div>
+
                 }
-                </div>
+            </div>
         }
-        </div>
-}
+    </div>
 <div class="row">
 </div>
