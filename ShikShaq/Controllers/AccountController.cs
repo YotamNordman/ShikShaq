@@ -191,22 +191,16 @@ namespace ShikShaq.Controllers
         [HttpPost]
         public async Task<ActionResult> SaveCart([FromBody] List<CartItem> cartItems)
         {
-            ViewBag.SaveCartErrorMessage = "";
             int? userId = HttpContext.Session.GetInt32("userId");
 
             if (userId != null)
             {
                 try
                 {
-                    var removeOldCart = from ci in _context.CartItem
-                                        where ci.UserId == userId
-                                        select ci;
-
-                    _context.CartItem.RemoveRange(removeOldCart);
+                    RemoveAllUserCartItem(userId);
 
                     foreach (CartItem ci in cartItems)
                     {
-                        //ci.User = _context.User.Find(userId);
                         ci.UserId = userId.GetValueOrDefault();
                         _context.CartItem.Add(ci);
                     }
@@ -225,6 +219,46 @@ namespace ShikShaq.Controllers
             }
           
         }
+
+        [HttpPost]
+        public async Task<ActionResult> CheckoutOrder([FromBody] Order order)
+        {
+            int? userId = HttpContext.Session.GetInt32("userId");
+
+            if (userId != null)
+            {
+                try
+                {
+                    order.OrderDate = DateTime.Now;
+                    order.UserId = userId.GetValueOrDefault();
+                    _context.Order.Add(order);
+
+                    RemoveAllUserCartItem(userId);
+
+                    await _context.SaveChangesAsync();
+                    return StatusCode(StatusCodes.Status200OK);
+                }
+                catch (Exception e)
+                {
+                    return StatusCode(StatusCodes.Status500InternalServerError);
+                }
+            }
+            else
+            {
+                return StatusCode(StatusCodes.Status401Unauthorized);
+            }
+
+        }
+
+        private void RemoveAllUserCartItem(int? userId)
+        {
+            var removeOldCart = from ci in _context.CartItem
+                                where ci.UserId == userId
+                                select ci;
+
+            _context.CartItem.RemoveRange(removeOldCart);
+        }
+
 
     }
 }

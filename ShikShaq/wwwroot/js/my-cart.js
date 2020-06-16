@@ -94,7 +94,35 @@ function removeAllItems() {
 
 /* Delete cart and create an order from it */
 function checkoutOrder() {
-    // TODO: delete cart and create an order from it
+    var finishOrder = {};
+    finishOrder.FinalPrice = parseInt($('#cart-subtotal').text());
+    finishOrder.ProductInOrders = [];
+
+    $('.product').each(function () {
+        var currProduct = new Object();
+        currProduct.ProductId = this.id;
+        currProduct.Quantity = $('#' + this.id + ' .product-quantity input').val();
+        finishOrder.ProductInOrders.push(currProduct);
+    });
+
+    if (finishOrder.ProductInOrders.length > 0) {
+        $.ajax('/Account/CheckoutOrder', {
+            type: 'POST',
+            data: JSON.stringify(finishOrder),
+            contentType: 'application/json',
+            success: function (data, status, xhr) {
+                removeAllItems();
+                $('#status-message').html('Order has been created successfully!');
+            },
+            error: function (jqXhr, textStatus, errorMessage) {
+                $('#status-message').html('Error while creating the order! call an administrator to fix it!');
+            }
+        });
+    } else {
+        $('#status-message').html('You cannot order without products!');
+    }
+
+   
 }
 
 /* Saves the cart current state*/
