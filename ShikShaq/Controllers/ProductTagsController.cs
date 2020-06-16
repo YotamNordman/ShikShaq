@@ -22,7 +22,7 @@ namespace ShikShaq.Controllers
         // GET: ProductTags
         public async Task<IActionResult> Index()
         {
-            return View(await _context.ProductTag.ToListAsync());
+            return View(await _context.ProductTag.Include(o => o.Product).Include(o => o.Tag).ToListAsync());
         }
 
         public async Task<IActionResult> Search(string name)
@@ -46,7 +46,7 @@ namespace ShikShaq.Controllers
                 return NotFound();
             }
 
-            var productTag = await _context.ProductTag
+            var productTag = await _context.ProductTag.Include(o => o.Product).Include(o => o.Tag)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (productTag == null)
             {
@@ -59,6 +59,9 @@ namespace ShikShaq.Controllers
         // GET: ProductTags/Create
         public IActionResult Create()
         {
+            ViewBag.Products = new SelectList(_context.Product.ToList(), "Id", "Name");
+            ViewBag.Tags = new SelectList(_context.Tag.ToList(), "Id", "Name");
+
             return View();
         }
 
@@ -67,10 +70,13 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id")] ProductTag productTag)
+        public async Task<IActionResult> Create([Bind("Id")] ProductTag productTag, int ProductId, int TagId)
         {
             if (ModelState.IsValid)
             {
+                productTag.Product = _context.Product.First(u => u.Id == ProductId);
+                productTag.Tag = _context.Tag.First(u => u.Id == TagId);
+
                 _context.Add(productTag);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -81,6 +87,9 @@ namespace ShikShaq.Controllers
         // GET: ProductTags/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            ViewBag.Products = new SelectList(_context.Product.ToList(), "Id", "Name");
+            ViewBag.Tags = new SelectList(_context.Tag.ToList(), "Id", "Name");
+
             if (id == null)
             {
                 return NotFound();
@@ -99,7 +108,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id")] ProductTag productTag)
+        public async Task<IActionResult> Edit(int id, [Bind("Id")] ProductTag productTag, int ProductId, int TagId)
         {
             if (id != productTag.Id)
             {
@@ -110,6 +119,9 @@ namespace ShikShaq.Controllers
             {
                 try
                 {
+                    productTag.Product = _context.Product.First(u => u.Id == ProductId);
+                    productTag.Tag = _context.Tag.First(u => u.Id == TagId);
+
                     _context.Update(productTag);
                     await _context.SaveChangesAsync();
                 }
