@@ -99,5 +99,25 @@ function checkoutOrder() {
 
 /* Saves the cart current state*/
 function saveChanges() {
-    // TODO: saves the cart current state
+
+    var savedProductArray = [];
+    $('.product').each(function () {
+        var currProduct = new Object();
+        currProduct.ProductId = this.id;
+        currProduct.Quantity = $('#' + this.id + ' .product-quantity input').val();
+        savedProductArray.push(currProduct);
+    });
+
+    $.ajax('/Account/SaveCart', {
+        type: 'POST', 
+        data: JSON.stringify(savedProductArray),
+        contentType: 'application/json',
+        success: function (data, status, xhr) {
+            $('#status-message').html('Cart saved successfully!');
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            $('#status-message').html('Error while saving the cart current state! call an administrator to fix it!');
+        }
+    });
+
 }
