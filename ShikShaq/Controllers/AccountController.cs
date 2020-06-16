@@ -131,9 +131,10 @@ namespace ShikShaq.Controllers
             }
 
             ViewBag.totalPrice = totalPrice;
+            List<Branch> branches = await _context.Branch.ToListAsync();
 
-
-            return View(cartItems);
+            Tuple <List<CartItem>, List<Branch>> tuple = new Tuple <List<CartItem>, List<Branch>> (cartItems, branches);
+            return View(tuple);
         }
 
         public ActionResult SignUp()

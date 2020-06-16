@@ -1,5 +1,6 @@
-﻿@model IEnumerable<WebApplication1.Models.CartItem>
+﻿@model Tuple<List<CartItem>, List<Branch>>
 @using ShikShaq.Logic;
+@using WebApplication1.Models;
 
 @{
     ViewData["Title"] = "Cart";
@@ -19,7 +20,7 @@
         <label class="product-line-price">Total</label>
     </div>
 
-    @foreach (var item in Model)
+    @foreach (var item in Model.Item1)
     {
         var imgsrc = ProductImageSourceFetcher.Fetch(item.Product);
 
@@ -57,6 +58,18 @@
     <button class="checkout">Checkout</button>
     <button class="save">Save Changes</button>
     <button class="clear">Clear Cart</button>
+
+    <div class="select">
+        <select name="slct" id="slct">
+            <option selected disabled>Choose a branch</option>
+
+            @foreach (var item in Model.Item2)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+
+        </select>
+    </div>
 
 </section>
 
