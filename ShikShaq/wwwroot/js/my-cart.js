@@ -99,29 +99,39 @@ function checkoutOrder() {
     finishOrder.FinalPrice = parseInt($('#cart-subtotal').text());
     finishOrder.ProductInOrders = [];
 
-    $('.product').each(function () {
-        var currProduct = new Object();
-        currProduct.ProductId = this.id;
-        currProduct.Quantity = $('#' + this.id + ' .product-quantity input').val();
-        finishOrder.ProductInOrders.push(currProduct);
-    });
+    finishOrder.BranchId = $('#slct').val();
 
-    if (finishOrder.ProductInOrders.length > 0) {
-        $.ajax('/Account/CheckoutOrder', {
-            type: 'POST',
-            data: JSON.stringify(finishOrder),
-            contentType: 'application/json',
-            success: function (data, status, xhr) {
-                removeAllItems();
-                $('#status-message').html('Order has been created successfully!');
-            },
-            error: function (jqXhr, textStatus, errorMessage) {
-                $('#status-message').html('Error while creating the order! call an administrator to fix it!');
-            }
+    if (finishOrder.BranchId != null && !isNaN(finishOrder.BranchId)) {
+        finishOrder.BranchId = Number.parseInt(finishOrder.BranchId);
+
+        $('.product').each(function () {
+            var currProduct = new Object();
+            currProduct.ProductId = this.id;
+            currProduct.Quantity = $('#' + this.id + ' .product-quantity input').val();
+            finishOrder.ProductInOrders.push(currProduct);
         });
+
+        if (finishOrder.ProductInOrders.length > 0) {
+            $.ajax('/Account/CheckoutOrder', {
+                type: 'POST',
+                data: JSON.stringify(finishOrder),
+                contentType: 'application/json',
+                success: function (data, status, xhr) {
+                    removeAllItems();
+                    $('#status-message').html('Order has been created successfully!');
+                },
+                error: function (jqXhr, textStatus, errorMessage) {
+                    $('#status-message').html('Error while creating the order! call an administrator to fix it!');
+                }
+            });
+        } else {
+            $('#status-message').html('You cannot order without products!');
+        }
     } else {
-        $('#status-message').html('You cannot order without products!');
+        $('#status-message').html('You must choose a branch!');
     }
+
+   
 
    
 }

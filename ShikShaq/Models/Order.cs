@@ -15,6 +15,8 @@ namespace WebApplication1.Models
 
         public DateTime OrderDate { get; set; }
 
+        public int BranchId { get; set; }
+
         public Branch Branch { get; set; }
 
         public float FinalPrice { get; set; }
