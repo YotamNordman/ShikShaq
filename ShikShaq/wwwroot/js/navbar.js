@@ -7,7 +7,7 @@
     }
 }
 
-window.onscroll = function () { myFunction2() };
+//window.onscroll = function () { myFunction2() };
 
 var navbar = document.getElementById("myTopnav");
 

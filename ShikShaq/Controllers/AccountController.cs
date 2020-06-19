@@ -131,9 +131,10 @@ namespace ShikShaq.Controllers
             }
 
             ViewBag.totalPrice = totalPrice;
+            List<Branch> branches = await _context.Branch.ToListAsync();
 
-
-            return View(cartItems);
+            Tuple <List<CartItem>, List<Branch>> tuple = new Tuple <List<CartItem>, List<Branch>> (cartItems, branches);
+            return View(tuple);
         }
 
         public ActionResult SignUp()
@@ -187,6 +188,78 @@ namespace ShikShaq.Controllers
                 return View("SignUp");
             }
         }
+
+        [HttpPost]
+        public async Task<ActionResult> SaveCart([FromBody] List<CartItem> cartItems)
+        {
+            int? userId = HttpContext.Session.GetInt32("userId");
+
+            if (userId != null)
+            {
+                try
+                {
+                    RemoveAllUserCartItem(userId);
+
+                    foreach (CartItem ci in cartItems)
+                    {
+                        ci.UserId = userId.GetValueOrDefault();
+                        _context.CartItem.Add(ci);
+                    }
+                    
+                    await _context.SaveChangesAsync();
+                    return StatusCode(StatusCodes.Status200OK);
+                }
+                catch (Exception e)
+                {
+                    return StatusCode(StatusCodes.Status500InternalServerError);
+                }
+            }
+            else
+            {
+                return StatusCode(StatusCodes.Status401Unauthorized);
+            }
+          
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> CheckoutOrder([FromBody] Order order)
+        {
+            int? userId = HttpContext.Session.GetInt32("userId");
+
+            if (userId != null)
+            {
+                try
+                {
+                    order.OrderDate = DateTime.Now;
+                    order.UserId = userId.GetValueOrDefault();
+                    _context.Order.Add(order);
+
+                    RemoveAllUserCartItem(userId);
+
+                    await _context.SaveChangesAsync();
+                    return StatusCode(StatusCodes.Status200OK);
+                }
+                catch (Exception e)
+                {
+                    return StatusCode(StatusCodes.Status500InternalServerError);
+                }
+            }
+            else
+            {
+                return StatusCode(StatusCodes.Status401Unauthorized);
+            }
+
+        }
+
+        private void RemoveAllUserCartItem(int? userId)
+        {
+            var removeOldCart = from ci in _context.CartItem
+                                where ci.UserId == userId
+                                select ci;
+
+            _context.CartItem.RemoveRange(removeOldCart);
+        }
+
 
     }
 }
