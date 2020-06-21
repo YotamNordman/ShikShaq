@@ -2,6 +2,7 @@
 var taxRate = 0.05;
 var shippingRate = 15.00;
 var fadeTime = 300;
+recalculateCart();
 
 
 /* Assign actions */
@@ -94,10 +95,68 @@ function removeAllItems() {
 
 /* Delete cart and create an order from it */
 function checkoutOrder() {
-    // TODO: delete cart and create an order from it
+    var finishOrder = {};
+    finishOrder.FinalPrice = parseInt($('#cart-subtotal').text());
+    finishOrder.ProductInOrders = [];
+
+    finishOrder.BranchId = $('#slct').val();
+
+    if (finishOrder.BranchId != null && !isNaN(finishOrder.BranchId)) {
+        finishOrder.BranchId = Number.parseInt(finishOrder.BranchId);
+
+        $('.product').each(function () {
+            var currProduct = new Object();
+            currProduct.ProductId = this.id;
+            currProduct.Quantity = $('#' + this.id + ' .product-quantity input').val();
+            finishOrder.ProductInOrders.push(currProduct);
+        });
+
+        if (finishOrder.ProductInOrders.length > 0) {
+            $.ajax('/Account/CheckoutOrder', {
+                type: 'POST',
+                data: JSON.stringify(finishOrder),
+                contentType: 'application/json',
+                success: function (data, status, xhr) {
+                    removeAllItems();
+                    $('#status-message').html('Order has been created successfully!');
+                },
+                error: function (jqXhr, textStatus, errorMessage) {
+                    $('#status-message').html('Error while creating the order! call an administrator to fix it!');
+                }
+            });
+        } else {
+            $('#status-message').html('You cannot order without products!');
+        }
+    } else {
+        $('#status-message').html('You must choose a branch!');
+    }
+
+   
+
+   
 }
 
 /* Saves the cart current state*/
 function saveChanges() {
-    // TODO: saves the cart current state
+
+    var savedProductArray = [];
+    $('.product').each(function () {
+        var currProduct = new Object();
+        currProduct.ProductId = this.id;
+        currProduct.Quantity = $('#' + this.id + ' .product-quantity input').val();
+        savedProductArray.push(currProduct);
+    });
+
+    $.ajax('/Account/SaveCart', {
+        type: 'POST', 
+        data: JSON.stringify(savedProductArray),
+        contentType: 'application/json',
+        success: function (data, status, xhr) {
+            $('#status-message').html('Cart saved successfully!');
+        },
+        error: function (jqXhr, textStatus, errorMessage) {
+            $('#status-message').html('Error while saving the cart current state! call an administrator to fix it!');
+        }
+    });
+
 }
