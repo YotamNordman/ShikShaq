@@ -31,7 +31,7 @@ namespace ShikShaq.Controllers
 
         public async Task<IActionResult> Search(string name, string description, string color, float price)
         {
-            var productsList = _context.Product.Where(e => true); ;
+            var productsList = _context.Product.Where(e => true);
 
             if(name != null)
             {
@@ -76,43 +76,6 @@ namespace ShikShaq.Controllers
             addProductTagsToUserSession(product);
 
             return View(product);
-        }
-
-        private void addProductTagsToUserSession(Product viewedProduct)
-        {
-            string stringOfTagsViewedByUser = HttpContext.Session.GetString(SessionViewedTags);
-            List<Tag> tagsViewedByUser = getListOfViewedTags(stringOfTagsViewedByUser);
-
-            tagsViewedByUser.AddRange(getListOfProductTags(viewedProduct));
-
-            string updatedStringOfTagsViewedByUser = new JavaScriptSerializer().Serialize(tagsViewedByUser);
-
-            HttpContext.Session.SetString(SessionViewedTags, updatedStringOfTagsViewedByUser);
-        }
-
-        private List<Tag> getListOfProductTags(Product viewedProduct)
-        {
-            if (viewedProduct.ProductTags != null)
-            {
-                return viewedProduct.ProductTags
-                    .Select(productTag => {
-                        productTag.Tag.ProductTags = null;
-                        return productTag.Tag;
-                    }).ToList();
-            }
-
-            return new List<Tag>();
-        }
-
-        private List<Tag> getListOfViewedTags(string stringOfTagsViewedByUser)
-        {
-            if(stringOfTagsViewedByUser != null)
-            {
-                return Newtonsoft.Json.JsonConvert
-                    .DeserializeObject<List<Tag>>(stringOfTagsViewedByUser);
-            }
-
-            return new List<Tag>();
         }
 
         // GET: Products/Create
@@ -247,6 +210,77 @@ namespace ShikShaq.Controllers
         private bool ProductExists(int id)
         {
             return _context.Product.Any(e => e.Id == id);
+        }
+
+        private void addProductTagsToUserSession(Product viewedProduct)
+        {
+            string stringOfTagsViewedByUser = HttpContext.Session.GetString(SessionViewedTags);
+            List<Tag> tagsViewedByUser = getListOfViewedTags(stringOfTagsViewedByUser);
+
+            tagsViewedByUser.AddRange(getListOfProductTags(viewedProduct));
+
+            string updatedStringOfTagsViewedByUser = new JavaScriptSerializer().Serialize(tagsViewedByUser);
+
+            HttpContext.Session.SetString(SessionViewedTags, updatedStringOfTagsViewedByUser);
+        }
+
+        private List<Tag> getListOfProductTags(Product viewedProduct)
+        {
+            if (viewedProduct.ProductTags != null)
+            {
+                return viewedProduct.ProductTags
+                    .Select(productTag => {
+                        productTag.Tag.ProductTags = null;
+                        return productTag.Tag;
+                    }).ToList();
+            }
+
+            return new List<Tag>();
+        }
+
+        private List<Tag> getListOfViewedTags(string stringOfTagsViewedByUser)
+        {
+            if (stringOfTagsViewedByUser != null)
+            {
+                return Newtonsoft.Json.JsonConvert
+                    .DeserializeObject<List<Tag>>(stringOfTagsViewedByUser);
+            }
+
+            return new List<Tag>();
+        }
+
+        [HttpGet]
+        public List<Product> RecommendedProducts()
+        {
+            string stringOfTagsViewedByUser = HttpContext.Session.GetString(SessionViewedTags);
+            List<Tag> tagsViewedByUser = getListOfViewedTags(stringOfTagsViewedByUser);
+
+            List<int> orderedTagIds = tagsViewedByUser
+                .GroupBy(i => i.Id)
+                .Select(group => new {
+                    Metric = group.Key,
+                    Count = group.Count()
+                })
+                .OrderByDescending(group => group.Count)
+                .Select(group => group.Metric).ToList();
+
+            return getRecommendedProductsByTag(getMostCommonTagOrDefault(orderedTagIds));
+        }
+
+        private Tag getMostCommonTagOrDefault(List<int> orderedTagIds)
+        {
+            return orderedTagIds.Count > 0 ? _context.Tag.Find(orderedTagIds[0]) : _context.Tag.First();
+        }
+
+        public List<Product> getRecommendedProductsByTag(Tag tag)
+        {
+            int numberOfRecommendedProducts = 3;
+
+            var recommendedProducts = _context.Product
+                .Where(p => (p.ProductTags.Any(t => t.Tag.Id == tag.Id)))
+                .Take(numberOfRecommendedProducts).ToList();
+
+            return recommendedProducts;
         }
     }
 }
