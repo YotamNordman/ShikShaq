@@ -1,0 +1,39 @@
+﻿<div class="panel panel-primary">
+    <div class="panel-heading"><h4><b>Recommended Products</b></h4></div>
+    <div class="panel-body">
+        <div class='row card-list'>
+            <div class="row">
+                <div id="product_loader" style="margin: auto; max-width: 150px;" class="col d-flex align-items-center justify-content-center">
+                    <img class="resizable-image" width="100%" src="@Url.Content("~/gif/loading.gif")" alt="loader" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script id="product-template" type="text/x-custom-template">
+    <div class="col-sm-12 col-xs-12 mb-30" style="padding: 5px;">
+        <a class="image-link">
+            <div class="w3-card-4 w3-hover-shadow" style="border: 1px solid cadetblue; padding: 5px; border-radius: 5%;">
+
+                <img src="" class="productLogo" alt="Alps" style="height:60px; width:90px;">
+
+                <div class="w3-container w3-center">
+                    <h5 style="font-weight:bold;font-size:12px;">
+                        <span class="badge"></span>
+                    </h5>
+                    <div class="custom-labels" style="position:relative;">
+                        <h5 style="color: #777;">Product Name:  <span class="product-title" style="color:#C1A16B;font-weight:bold;"></span></h5>
+                        <h4 style="color: #777;">Price:<span class="label label-default product-price"></span></h4>
+                    </div>
+                    <h5></h5>
+                </div>
+                <div style="">
+                    <a class="details-link" href="" target="_blank" class="theme_btn-12">
+                        Go to product
+                    </a>
+                </div>
+            </div>
+        </a>
+    </div>
+</script>
+
