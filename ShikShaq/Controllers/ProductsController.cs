@@ -11,16 +11,23 @@ using Microsoft.EntityFrameworkCore;
 using Nancy.Json;
 using ShikShaq.Data;
 using WebApplication1.Models;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Web.WebPages;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ShikShaq.Controllers
 {
+    
     public class ProductsController : Controller
     {
+        private ShikShaqContext writecontext;
         private readonly ShikShaqContext _context;
         public const string SessionViewedTags = "tagsViewedByUser";
         public ProductsController(ShikShaqContext context)
         {
             _context = context;
+            writecontext = context;
         }
 
         // GET: Products
@@ -281,6 +288,28 @@ namespace ShikShaq.Controllers
                 .Take(numberOfRecommendedProducts).ToList();
 
             return recommendedProducts;
+        }
+        [Authorize]
+        public async Task<IActionResult> AddToCart(int id)
+        {
+            int userId = HttpContext.User.Claims.ToList()[0].Value.AsInt();
+            int productId = id;
+            int quantity = 1;
+            var product = await _context.Product
+            .FirstOrDefaultAsync(m => m.Id == productId);
+            var user = await _context.User
+            .FirstOrDefaultAsync(m => m.Id == userId);
+            var cartitem = new CartItem
+            { 
+                //Product = product,
+                //User = user,
+                ProductId = productId,
+                UserId = userId,
+                Quantity = quantity
+            };
+            writecontext.CartItem.Add(cartitem);
+            await writecontext.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
     }
 }
