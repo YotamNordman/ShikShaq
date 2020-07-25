@@ -9,29 +9,30 @@
 }
 @if (User.Identity.IsAuthenticated && User.HasClaim(ClaimTypes.Role, "Admin"))
 {
-    <p>
-        <a asp-action="Create">Create New</a>
+    <p style="margin-top: 2%">
+        <a asp-action="Create" class="btn btn-primary">Create New</a>
     </p>
 }
+
     <form asp-action="Search">
         <div class="form-group">
-            <label class="control-label mr-2">Enter name</label>
-            <input name="name" class="form-control  mr-2" style="width:30%" />
+            <input name="name" class="form-control  mr-2" style="width:30%"
+                   placeholder="Enter Name"/>
         </div>
         <div class="form-group">
-            <label class="control-label mr-2">Enter description</label>
-            <input name="description" class="form-control  mr-2" style="width:30%" />
+            <input name="description" class="form-control  mr-2" style="width:30%" 
+                   placeholder="Enter Description"/>
         </div>
         <div class="form-group">
-            <label class="control-label mr-2">Enter color</label>
-            <input name="color" class="form-control  mr-2" style="width:30%" />
+            <input name="color" class="form-control  mr-2" style="width:30%" 
+                   placeholder="Enter Color"/>
         </div>
         <div class="form-group">
-            <label class="control-label mr-2">Enter price</label>
-            <input name="price" class="form-control  mr-2" style="width:30%" />
+            <input name="price" class="form-control  mr-2" style="width:30%"
+                   placeholder="Enter Price"/>
         </div>
         <div class="form-group">
-            <input type="submit" value="Search" class="btn btn-default" />
+            <input type="submit" value="Search" class="btn btn-primary" />
         </div>
 
     </form>

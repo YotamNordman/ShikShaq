@@ -22,7 +22,7 @@ namespace ShikShaq.Controllers
         // GET: ProductInBranches
         public async Task<IActionResult> Index()
         {
-            return View(await _context.ProductInBranch.ToListAsync());
+            return View(await _context.ProductInBranch.Include(o => o.Product).Include(o => o.Branch).ToListAsync());
         }
 
         public async Task<IActionResult> Search(int quantity)
@@ -40,7 +40,7 @@ namespace ShikShaq.Controllers
                 return NotFound();
             }
 
-            var productInBranch = await _context.ProductInBranch
+            var productInBranch = await _context.ProductInBranch.Include(o => o.Product).Include(o => o.Branch)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (productInBranch == null)
             {
@@ -53,6 +53,9 @@ namespace ShikShaq.Controllers
         // GET: ProductInBranches/Create
         public IActionResult Create()
         {
+            ViewBag.Products = new SelectList(_context.Product.ToList(), "Id", "Name");
+            ViewBag.Branches = new SelectList(_context.Branch.ToList(), "Id", "Name");
+
             return View();
         }
 
@@ -61,10 +64,13 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Quantity")] ProductInBranch productInBranch)
+        public async Task<IActionResult> Create([Bind("Id,Quantity")] ProductInBranch productInBranch, int ProductId, int BranchId)
         {
             if (ModelState.IsValid)
             {
+                productInBranch.Product = _context.Product.First(u => u.Id == ProductId);
+                productInBranch.Branch = _context.Branch.First(u => u.Id == BranchId);
+
                 _context.Add(productInBranch);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -75,6 +81,9 @@ namespace ShikShaq.Controllers
         // GET: ProductInBranches/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            ViewBag.Products = new SelectList(_context.Product.ToList(), "Id", "Name");
+            ViewBag.Branches = new SelectList(_context.Branch.ToList(), "Id", "Name");
+
             if (id == null)
             {
                 return NotFound();
@@ -93,7 +102,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Quantity")] ProductInBranch productInBranch)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Quantity")] ProductInBranch productInBranch, int ProductId, int BranchId)
         {
             if (id != productInBranch.Id)
             {
@@ -104,6 +113,9 @@ namespace ShikShaq.Controllers
             {
                 try
                 {
+                    productInBranch.Product = _context.Product.First(u => u.Id == ProductId);
+                    productInBranch.Branch = _context.Branch.First(u => u.Id == BranchId);
+
                     _context.Update(productInBranch);
                     await _context.SaveChangesAsync();
                 }

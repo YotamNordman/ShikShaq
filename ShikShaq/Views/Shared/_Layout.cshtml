@@ -13,10 +13,6 @@
     <meta property="og:description" content="If you want to be healty, come to Shik Shaq Store!" />
     <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Sport_balls.svg/400px-Sport_balls.svg.png" />
 
-    
-    <link href="~/css/navbar.css" rel="stylesheet" type="text/css">
-
-    <script src="~/js/navbar.js"></script>
     <!-- Facebook Featchers -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0"></script>
 
@@ -24,6 +20,7 @@
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
+        <link href="~/css/recommended-products.css" rel="stylesheet" type="text/css">
     </environment>
     <environment exclude="Development">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -33,25 +30,8 @@
     </environment>
 </head>
 <body>
-    <!--
-        <nav id="navigation">
-            <a href="#" class="logo">Shik Shaq</a>
-            <ul class="links">
-                <li class="dropdown"><a href="/games" class="trigger-drop">Scores</a></li>
-                <li class="dropdown"><a href="/home/about" class="trigger-drop">About</a></li>
-                <li class="dropdown">
-                    <a href="#" class="trigger-drop">Products<i class="arrow"></i></a>
-                    <ul class="drop">
-                        <li><a href="#">All Products</a></li>
-                        <li><a href="#">Find Product</a></li>
-                    </ul>
-                </li>
-
-        </nav>
-
-    -->
-
-    <div class="topnav" id="myTopnav">
+  
+    <nav class="topnav" id="myTopnav">
         <a asp-controller="Home" asp-action="Index" class="active">SHIK SHAQ</a>
 
         @{ int? userId = Context.Session.GetInt32("userId"); }
@@ -88,9 +68,11 @@
                 <div class="dropdown-content">
                     <a asp-controller="Users" asp-action="Index" method="get">Manage Users</a>
                     <a asp-controller="Products" asp-action="Index" method="get">Manage Products</a>
+                    <a asp-controller="ProductInBranches" asp-action="Index" method="get">Manage Products In Branches</a>
                     <a asp-controller="Orders" asp-action="Index" method="get">Manage Orders</a>
                     <a asp-controller="Branches" asp-action="Index" method="get">Manage Branches</a>
                     <a asp-controller="Tags" asp-action="Index" method="get">Manage Tags</a>
+                    <a asp-controller="ProductTags" asp-action="Index" method="get">Manage Product Tags</a>
                     <a asp-controller="Statistics" asp-action="Index" method="get">Statistics</a>
                 </div>
             </div>
@@ -111,21 +93,27 @@
         <a href="/games">Score</a>
         <a href="/home/about">About</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
+    </nav>
 
     <partial name="_CookieConsentPartial" />
+    <div class="container-fluid">
+        <div class="row">
 
-    <div class="container body-content" style="max-width:100%; padding-top:50px">
-        @RenderBody()
-        <hr />
+            <div class="col-sm-9 body-content">
+                @RenderBody()
+            </div>
+            <div class="col-sm-3">
+                <partial name="/Views/Shared/RecommendedProductsPartial.cshtml" />
+            </div>
+        </div>
+        <hr/>
         <footer>
             <p>&copy; 2020 - ShikShaq</p>
             <div id="fb-root"></div>
 
-            <p>Like our facebook page: </p><div class="fb-like" data-href="https://www.facebook.com/nba" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="false"></div>
+            <p>Like our facebook page: </p><div class="fb-like" data-href="https://www.facebook.com/ShikShaq-105204734579121" data-width="" data-layout="standard" data-action="like" data-size="large" data-share="false"></div>
         </footer>
     </div>
-
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <link href="~/lib/jquery-data/dist/jquery.dataTables.min.css" rel="stylesheet" type="text/css">
@@ -133,6 +121,7 @@
 
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="~/js/recommendedProducts.js"></script>
     </environment>
     <environment exclude="Development">
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
@@ -150,8 +139,14 @@
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
+
+
     @RenderSection("Scripts", required: false)
 
     @RenderSection("Styles", false)
+
+    <script src="~/js/navbar.js"></script>
+    <link href="~/css/navbar.css" rel="stylesheet" type="text/css">
+
 </body>
 </html>
