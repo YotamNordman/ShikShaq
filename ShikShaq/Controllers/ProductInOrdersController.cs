@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ShikShaq.Data;
 using WebApplication1.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ShikShaq.Controllers
 {
@@ -20,11 +21,13 @@ namespace ShikShaq.Controllers
         }
 
         // GET: ProductInOrders
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.ProductInOrder.ToListAsync());
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Search(int quantity)
         {
             var productsInOrderList = _context.ProductInOrder.Where(product => product.Quantity == quantity).ToListAsync();
@@ -34,6 +37,7 @@ namespace ShikShaq.Controllers
 
 
         // GET: ProductInOrders/Details/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -52,6 +56,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: ProductInOrders/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -62,6 +67,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("Id,Quantity")] ProductInOrder productInOrder)
         {
             if (ModelState.IsValid)
@@ -74,6 +80,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: ProductInOrders/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -94,6 +101,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Quantity")] ProductInOrder productInOrder)
         {
             if (id != productInOrder.Id)
@@ -125,6 +133,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: ProductInOrders/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -143,6 +152,7 @@ namespace ShikShaq.Controllers
         }
 
         // POST: ProductInOrders/Delete/5
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)

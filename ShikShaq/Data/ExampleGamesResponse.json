@@ -3,500 +3,6 @@
 		"results": 100,
 		"fixtures": [
 			{
-				"fixture_id": 157385,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-17T14:00:00+00:00",
-				"event_timestamp": 1589724000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 38",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Emirates Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 42,
-					"team_name": "Arsenal",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
-				},
-				"awayTeam": {
-					"team_id": 38,
-					"team_name": "Watford",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/38.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157386,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-17T14:00:00+00:00",
-				"event_timestamp": 1589724000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 38",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Turf Moor",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 44,
-					"team_name": "Burnley",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
-				},
-				"awayTeam": {
-					"team_id": 51,
-					"team_name": "Brighton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/51.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157387,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-17T14:00:00+00:00",
-				"event_timestamp": 1589724000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 38",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Stamford Bridge",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 49,
-					"team_name": "Chelsea",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
-				},
-				"awayTeam": {
-					"team_id": 39,
-					"team_name": "Wolves",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/39.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157388,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-17T14:00:00+00:00",
-				"event_timestamp": 1589724000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 38",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Selhurst Park",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 52,
-					"team_name": "Crystal Palace",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
-				},
-				"awayTeam": {
-					"team_id": 47,
-					"team_name": "Tottenham",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/47.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157389,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-17T14:00:00+00:00",
-				"event_timestamp": 1589724000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 38",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Goodison Park",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 45,
-					"team_name": "Everton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png"
-				},
-				"awayTeam": {
-					"team_id": 35,
-					"team_name": "Bournemouth",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157390,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-17T14:00:00+00:00",
-				"event_timestamp": 1589724000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 38",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "King Power Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 46,
-					"team_name": "Leicester",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
-				},
-				"awayTeam": {
-					"team_id": 33,
-					"team_name": "Manchester United",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/33.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157391,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-17T14:00:00+00:00",
-				"event_timestamp": 1589724000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 38",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Etihad Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 50,
-					"team_name": "Manchester City",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/50.png"
-				},
-				"awayTeam": {
-					"team_id": 71,
-					"team_name": "Norwich",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157392,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-17T14:00:00+00:00",
-				"event_timestamp": 1589724000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 38",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "St. James' Park",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 34,
-					"team_name": "Newcastle",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/34.png"
-				},
-				"awayTeam": {
-					"team_id": 40,
-					"team_name": "Liverpool",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157393,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-17T14:00:00+00:00",
-				"event_timestamp": 1589724000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 38",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "St. Mary's Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 41,
-					"team_name": "Southampton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
-				},
-				"awayTeam": {
-					"team_id": 62,
-					"team_name": "Sheffield Utd",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157394,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-17T14:00:00+00:00",
-				"event_timestamp": 1589724000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 38",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "London Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 48,
-					"team_name": "West Ham",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/48.png"
-				},
-				"awayTeam": {
-					"team_id": 66,
-					"team_name": "Aston Villa",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157375,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-09T14:00:00+00:00",
-				"event_timestamp": 1589032800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 37",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Vitality Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 35,
-					"team_name": "Bournemouth",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
-				},
-				"awayTeam": {
-					"team_id": 41,
-					"team_name": "Southampton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157376,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-09T14:00:00+00:00",
-				"event_timestamp": 1589032800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 37",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Villa Park",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 66,
-					"team_name": "Aston Villa",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
-				},
-				"awayTeam": {
-					"team_id": 42,
-					"team_name": "Arsenal",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157377,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-09T14:00:00+00:00",
-				"event_timestamp": 1589032800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 37",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "The American Express Community Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 51,
-					"team_name": "Brighton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/51.png"
-				},
-				"awayTeam": {
-					"team_id": 34,
-					"team_name": "Newcastle",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/34.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
 				"fixture_id": 157378,
 				"league_id": 524,
 				"league": {
@@ -505,16 +11,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-05-09T14:00:00+00:00",
-				"event_timestamp": 1589032800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-22T19:15:00+00:00",
+				"event_timestamp": 1595445300,
+				"firstHalfStart": 1595445300,
+				"secondHalfStart": 1595448900,
 				"round": "Regular Season - 37",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Anfield",
-				"referee": null,
+				"referee": "Andre Marriner, England",
 				"homeTeam": {
 					"team_id": 40,
 					"team_name": "Liverpool",
@@ -525,11 +31,11 @@
 					"team_name": "Chelsea",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 5,
+				"goalsAwayTeam": 3,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "3-1",
+					"fulltime": "5-3",
 					"extratime": null,
 					"penalty": null
 				}
@@ -543,16 +49,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-05-09T14:00:00+00:00",
-				"event_timestamp": 1589032800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-22T17:00:00+00:00",
+				"event_timestamp": 1595437200,
+				"firstHalfStart": 1595437200,
+				"secondHalfStart": 1595440800,
 				"round": "Regular Season - 37",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Old Trafford",
-				"referee": null,
+				"referee": "Paul Tierney, England",
 				"homeTeam": {
 					"team_id": 33,
 					"team_name": "Manchester United",
@@ -563,17 +69,17 @@
 					"team_name": "West Ham",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/48.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-1",
+					"fulltime": "1-1",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157380,
+				"fixture_id": 157376,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -581,107 +87,31 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-05-09T14:00:00+00:00",
-				"event_timestamp": 1589032800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-21T19:15:00+00:00",
+				"event_timestamp": 1595358900,
+				"firstHalfStart": 1595358900,
+				"secondHalfStart": 1595362500,
 				"round": "Regular Season - 37",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Carrow Road",
-				"referee": null,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Villa Park",
+				"referee": "Chris Kavanagh, England",
 				"homeTeam": {
-					"team_id": 71,
-					"team_name": "Norwich",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
+					"team_id": 66,
+					"team_name": "Aston Villa",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
 				},
 				"awayTeam": {
-					"team_id": 44,
-					"team_name": "Burnley",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
+					"team_id": 42,
+					"team_name": "Arsenal",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157381,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-09T14:00:00+00:00",
-				"event_timestamp": 1589032800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 37",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Bramall Lane",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 62,
-					"team_name": "Sheffield Utd",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
-				},
-				"awayTeam": {
-					"team_id": 45,
-					"team_name": "Everton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157382,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-09T14:00:00+00:00",
-				"event_timestamp": 1589032800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 37",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Tottenham Hotspur Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 47,
-					"team_name": "Tottenham",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/47.png"
-				},
-				"awayTeam": {
-					"team_id": 46,
-					"team_name": "Leicester",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "1-0",
+					"fulltime": "1-0",
 					"extratime": null,
 					"penalty": null
 				}
@@ -695,16 +125,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-05-09T14:00:00+00:00",
-				"event_timestamp": 1589032800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-21T17:00:00+00:00",
+				"event_timestamp": 1595350800,
+				"firstHalfStart": 1595350800,
+				"secondHalfStart": 1595354400,
 				"round": "Regular Season - 37",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Vicarage Road",
-				"referee": null,
+				"referee": "Michael Oliver, England",
 				"homeTeam": {
 					"team_id": 38,
 					"team_name": "Watford",
@@ -715,11 +145,11 @@
 					"team_name": "Manchester City",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/50.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 4,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-2",
+					"fulltime": "0-4",
 					"extratime": null,
 					"penalty": null
 				}
@@ -733,16 +163,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-05-09T14:00:00+00:00",
-				"event_timestamp": 1589032800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-20T19:15:00+00:00",
+				"event_timestamp": 1595272500,
+				"firstHalfStart": 1595272500,
+				"secondHalfStart": 1595276100,
 				"round": "Regular Season - 37",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Molineux Stadium",
-				"referee": null,
+				"referee": "Peter Bankes, England",
 				"homeTeam": {
 					"team_id": 39,
 					"team_name": "Wolves",
@@ -753,17 +183,17 @@
 					"team_name": "Crystal Palace",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "1-0",
+					"fulltime": "2-0",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157365,
+				"fixture_id": 157377,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -771,335 +201,183 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-05-02T14:00:00+00:00",
-				"event_timestamp": 1588428000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 36",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Emirates Stadium",
-				"referee": null,
+				"event_date": "2020-07-20T17:00:00+00:00",
+				"event_timestamp": 1595264400,
+				"firstHalfStart": 1595264400,
+				"secondHalfStart": 1595268000,
+				"round": "Regular Season - 37",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "The American Express Community Stadium",
+				"referee": "Simon Hooper, England",
 				"homeTeam": {
-					"team_id": 42,
-					"team_name": "Arsenal",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
-				},
-				"awayTeam": {
-					"team_id": 40,
-					"team_name": "Liverpool",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157366,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-02T14:00:00+00:00",
-				"event_timestamp": 1588428000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 36",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Turf Moor",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 44,
-					"team_name": "Burnley",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
-				},
-				"awayTeam": {
-					"team_id": 39,
-					"team_name": "Wolves",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/39.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157367,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-02T14:00:00+00:00",
-				"event_timestamp": 1588428000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 36",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Stamford Bridge",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 49,
-					"team_name": "Chelsea",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
-				},
-				"awayTeam": {
-					"team_id": 71,
-					"team_name": "Norwich",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157368,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-02T14:00:00+00:00",
-				"event_timestamp": 1588428000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 36",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Selhurst Park",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 52,
-					"team_name": "Crystal Palace",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
-				},
-				"awayTeam": {
-					"team_id": 33,
-					"team_name": "Manchester United",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/33.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157369,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-02T14:00:00+00:00",
-				"event_timestamp": 1588428000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 36",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Goodison Park",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 45,
-					"team_name": "Everton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png"
-				},
-				"awayTeam": {
-					"team_id": 66,
-					"team_name": "Aston Villa",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157370,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-02T14:00:00+00:00",
-				"event_timestamp": 1588428000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 36",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "King Power Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 46,
-					"team_name": "Leicester",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
-				},
-				"awayTeam": {
-					"team_id": 62,
-					"team_name": "Sheffield Utd",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157371,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-02T14:00:00+00:00",
-				"event_timestamp": 1588428000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 36",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Etihad Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 50,
-					"team_name": "Manchester City",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/50.png"
-				},
-				"awayTeam": {
-					"team_id": 35,
-					"team_name": "Bournemouth",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157372,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-02T14:00:00+00:00",
-				"event_timestamp": 1588428000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 36",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "St. James' Park",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 34,
-					"team_name": "Newcastle",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/34.png"
-				},
-				"awayTeam": {
-					"team_id": 47,
-					"team_name": "Tottenham",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/47.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157373,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-05-02T14:00:00+00:00",
-				"event_timestamp": 1588428000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 36",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "St. Mary's Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 41,
-					"team_name": "Southampton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
-				},
-				"awayTeam": {
 					"team_id": 51,
 					"team_name": "Brighton",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/51.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"awayTeam": {
+					"team_id": 34,
+					"team_name": "Newcastle",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/34.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-0",
+					"fulltime": "0-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157381,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-20T17:00:00+00:00",
+				"event_timestamp": 1595264400,
+				"firstHalfStart": 1595264400,
+				"secondHalfStart": 1595268000,
+				"round": "Regular Season - 37",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Bramall Lane",
+				"referee": "Stuart Attwell, England",
+				"homeTeam": {
+					"team_id": 62,
+					"team_name": "Sheffield Utd",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
+				},
+				"awayTeam": {
+					"team_id": 45,
+					"team_name": "Everton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "0-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157382,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-19T15:00:00+00:00",
+				"event_timestamp": 1595170800,
+				"firstHalfStart": 1595170800,
+				"secondHalfStart": 1595174400,
+				"round": "Regular Season - 37",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Tottenham Hotspur Stadium",
+				"referee": "A. Taylor",
+				"homeTeam": {
+					"team_id": 47,
+					"team_name": "Tottenham",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/47.png"
+				},
+				"awayTeam": {
+					"team_id": 46,
+					"team_name": "Leicester",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
+				},
+				"goalsHomeTeam": 3,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "3-0",
+					"fulltime": "3-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157375,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-19T13:00:00+00:00",
+				"event_timestamp": 1595163600,
+				"firstHalfStart": 1595163600,
+				"secondHalfStart": 1595167200,
+				"round": "Regular Season - 37",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Vitality Stadium",
+				"referee": "C. Pawson",
+				"homeTeam": {
+					"team_id": 35,
+					"team_name": "Bournemouth",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+				},
+				"awayTeam": {
+					"team_id": 41,
+					"team_name": "Southampton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 2,
+				"score": {
+					"halftime": "0-1",
+					"fulltime": "0-2",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157380,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-18T16:30:00+00:00",
+				"event_timestamp": 1595089800,
+				"firstHalfStart": 1595089800,
+				"secondHalfStart": 1595093400,
+				"round": "Regular Season - 37",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Carrow Road",
+				"referee": "K. Friend",
+				"homeTeam": {
+					"team_id": 71,
+					"team_name": "Norwich",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
+				},
+				"awayTeam": {
+					"team_id": 44,
+					"team_name": "Burnley",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 2,
+				"score": {
+					"halftime": "0-1",
+					"fulltime": "0-2",
 					"extratime": null,
 					"penalty": null
 				}
@@ -1113,16 +391,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-05-02T14:00:00+00:00",
-				"event_timestamp": 1588428000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-17T19:00:00+00:00",
+				"event_timestamp": 1595012400,
+				"firstHalfStart": 1595012400,
+				"secondHalfStart": 1595016000,
 				"round": "Regular Season - 36",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "London Stadium",
-				"referee": null,
+				"referee": "M. Atkinson",
 				"homeTeam": {
 					"team_id": 48,
 					"team_name": "West Ham",
@@ -1133,17 +411,17 @@
 					"team_name": "Watford",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/38.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 3,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "3-0",
+					"fulltime": "3-1",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157356,
+				"fixture_id": 157368,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -1151,37 +429,37 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-27T00:00:00+00:00",
-				"event_timestamp": 1587945600,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 35",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Villa Park",
-				"referee": null,
+				"event_date": "2020-07-16T19:15:00+00:00",
+				"event_timestamp": 1594926900,
+				"firstHalfStart": 1594926900,
+				"secondHalfStart": 1594930500,
+				"round": "Regular Season - 36",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Selhurst Park",
+				"referee": "G. Scott",
 				"homeTeam": {
-					"team_id": 66,
-					"team_name": "Aston Villa",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
-				},
-				"awayTeam": {
 					"team_id": 52,
 					"team_name": "Crystal Palace",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"awayTeam": {
+					"team_id": 33,
+					"team_name": "Manchester United",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/33.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 2,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-1",
+					"fulltime": "0-2",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157361,
+				"fixture_id": 157373,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -1189,151 +467,37 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-26T00:00:00+00:00",
-				"event_timestamp": 1587859200,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 35",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Bramall Lane",
-				"referee": null,
+				"event_date": "2020-07-16T19:15:00+00:00",
+				"event_timestamp": 1594926900,
+				"firstHalfStart": 1594926900,
+				"secondHalfStart": 1594930500,
+				"round": "Regular Season - 36",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "St. Mary's Stadium",
+				"referee": "A. Marriner",
 				"homeTeam": {
-					"team_id": 62,
-					"team_name": "Sheffield Utd",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
+					"team_id": 41,
+					"team_name": "Southampton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
 				},
 				"awayTeam": {
-					"team_id": 49,
-					"team_name": "Chelsea",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157362,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-26T00:00:00+00:00",
-				"event_timestamp": 1587859200,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 35",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Tottenham Hotspur Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 47,
-					"team_name": "Tottenham",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/47.png"
-				},
-				"awayTeam": {
-					"team_id": 42,
-					"team_name": "Arsenal",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157355,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-25T00:00:00+00:00",
-				"event_timestamp": 1587772800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 35",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Vitality Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 35,
-					"team_name": "Bournemouth",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
-				},
-				"awayTeam": {
-					"team_id": 46,
-					"team_name": "Leicester",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157357,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-25T00:00:00+00:00",
-				"event_timestamp": 1587772800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 35",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "The American Express Community Stadium",
-				"referee": null,
-				"homeTeam": {
 					"team_id": 51,
 					"team_name": "Brighton",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/51.png"
 				},
-				"awayTeam": {
-					"team_id": 50,
-					"team_name": "Manchester City",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/50.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-1",
+					"fulltime": "1-1",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157358,
+				"fixture_id": 157369,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -1341,31 +505,259 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-25T00:00:00+00:00",
-				"event_timestamp": 1587772800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 35",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Anfield",
-				"referee": null,
+				"event_date": "2020-07-16T17:00:00+00:00",
+				"event_timestamp": 1594918800,
+				"firstHalfStart": 1594918800,
+				"secondHalfStart": 1594922400,
+				"round": "Regular Season - 36",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Goodison Park",
+				"referee": "A. Taylor",
 				"homeTeam": {
+					"team_id": 45,
+					"team_name": "Everton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png"
+				},
+				"awayTeam": {
+					"team_id": 66,
+					"team_name": "Aston Villa",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "1-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157370,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-16T17:00:00+00:00",
+				"event_timestamp": 1594918800,
+				"firstHalfStart": 1594918800,
+				"secondHalfStart": 1594922400,
+				"round": "Regular Season - 36",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "King Power Stadium",
+				"referee": "M. Oliver",
+				"homeTeam": {
+					"team_id": 46,
+					"team_name": "Leicester",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
+				},
+				"awayTeam": {
+					"team_id": 62,
+					"team_name": "Sheffield Utd",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
+				},
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "1-0",
+					"fulltime": "2-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157365,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-15T19:15:00+00:00",
+				"event_timestamp": 1594840500,
+				"firstHalfStart": 1594840500,
+				"secondHalfStart": 1594844100,
+				"round": "Regular Season - 36",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Emirates Stadium",
+				"referee": "P. Tierney",
+				"homeTeam": {
+					"team_id": 42,
+					"team_name": "Arsenal",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
+				},
+				"awayTeam": {
 					"team_id": 40,
 					"team_name": "Liverpool",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
 				},
-				"awayTeam": {
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "2-1",
+					"fulltime": "2-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157366,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-15T17:00:00+00:00",
+				"event_timestamp": 1594832400,
+				"firstHalfStart": 1594832400,
+				"secondHalfStart": 1594836000,
+				"round": "Regular Season - 36",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Turf Moor",
+				"referee": "M. Dean",
+				"homeTeam": {
 					"team_id": 44,
 					"team_name": "Burnley",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"awayTeam": {
+					"team_id": 39,
+					"team_name": "Wolves",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/39.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-0",
+					"fulltime": "1-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157371,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-15T17:00:00+00:00",
+				"event_timestamp": 1594832400,
+				"firstHalfStart": 1594832400,
+				"secondHalfStart": 1594836000,
+				"round": "Regular Season - 36",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Etihad Stadium",
+				"referee": "L. Mason",
+				"homeTeam": {
+					"team_id": 50,
+					"team_name": "Manchester City",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/50.png"
+				},
+				"awayTeam": {
+					"team_id": 35,
+					"team_name": "Bournemouth",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+				},
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "2-0",
+					"fulltime": "2-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157372,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-15T17:00:00+00:00",
+				"event_timestamp": 1594832400,
+				"firstHalfStart": 1594832400,
+				"secondHalfStart": 1594836000,
+				"round": "Regular Season - 36",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "St. James' Park",
+				"referee": "D. Coote",
+				"homeTeam": {
+					"team_id": 34,
+					"team_name": "Newcastle",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/34.png"
+				},
+				"awayTeam": {
+					"team_id": 47,
+					"team_name": "Tottenham",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/47.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 3,
+				"score": {
+					"halftime": "0-1",
+					"fulltime": "1-3",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157367,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-14T19:15:00+00:00",
+				"event_timestamp": 1594754100,
+				"firstHalfStart": 1594754100,
+				"secondHalfStart": 1594757700,
+				"round": "Regular Season - 36",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Stamford Bridge",
+				"referee": "J. Moss",
+				"homeTeam": {
+					"team_id": 49,
+					"team_name": "Chelsea",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
+				},
+				"awayTeam": {
+					"team_id": 71,
+					"team_name": "Norwich",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "1-0",
+					"fulltime": "1-0",
 					"extratime": null,
 					"penalty": null
 				}
@@ -1379,16 +771,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-25T00:00:00+00:00",
-				"event_timestamp": 1587772800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-13T19:00:00+00:00",
+				"event_timestamp": 1594666800,
+				"firstHalfStart": 1594666800,
+				"secondHalfStart": 1594670400,
 				"round": "Regular Season - 35",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Old Trafford",
-				"referee": null,
+				"referee": "C. Kavanagh",
 				"homeTeam": {
 					"team_id": 33,
 					"team_name": "Manchester United",
@@ -1399,17 +791,17 @@
 					"team_name": "Southampton",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 2,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "2-1",
+					"fulltime": "2-2",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157360,
+				"fixture_id": 157355,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -1417,37 +809,37 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-25T00:00:00+00:00",
-				"event_timestamp": 1587772800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-12T18:00:00+00:00",
+				"event_timestamp": 1594576800,
+				"firstHalfStart": 1594576800,
+				"secondHalfStart": 1594580400,
 				"round": "Regular Season - 35",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Carrow Road",
-				"referee": null,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Vitality Stadium",
+				"referee": "S. Attwell",
 				"homeTeam": {
-					"team_id": 71,
-					"team_name": "Norwich",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
+					"team_id": 35,
+					"team_name": "Bournemouth",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
 				},
 				"awayTeam": {
-					"team_id": 48,
-					"team_name": "West Ham",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/48.png"
+					"team_id": 46,
+					"team_name": "Leicester",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 4,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-1",
+					"fulltime": "4-1",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157363,
+				"fixture_id": 157362,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -1455,31 +847,69 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-25T00:00:00+00:00",
-				"event_timestamp": 1587772800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-12T15:30:00+00:00",
+				"event_timestamp": 1594567800,
+				"firstHalfStart": 1594567800,
+				"secondHalfStart": 1594571400,
 				"round": "Regular Season - 35",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Vicarage Road",
-				"referee": null,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Tottenham Hotspur Stadium",
+				"referee": "M. Oliver",
 				"homeTeam": {
-					"team_id": 38,
-					"team_name": "Watford",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/38.png"
+					"team_id": 47,
+					"team_name": "Tottenham",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/47.png"
 				},
 				"awayTeam": {
-					"team_id": 34,
-					"team_name": "Newcastle",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/34.png"
+					"team_id": 42,
+					"team_name": "Arsenal",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "1-1",
+					"fulltime": "2-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157356,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-12T13:15:00+00:00",
+				"event_timestamp": 1594559700,
+				"firstHalfStart": 1594559700,
+				"secondHalfStart": 1594563300,
+				"round": "Regular Season - 35",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Villa Park",
+				"referee": "M. Atkinson",
+				"homeTeam": {
+					"team_id": 66,
+					"team_name": "Aston Villa",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
+				},
+				"awayTeam": {
+					"team_id": 52,
+					"team_name": "Crystal Palace",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
+				},
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "1-0",
+					"fulltime": "2-0",
 					"extratime": null,
 					"penalty": null
 				}
@@ -1493,16 +923,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-25T00:00:00+00:00",
-				"event_timestamp": 1587772800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-12T11:00:00+00:00",
+				"event_timestamp": 1594551600,
+				"firstHalfStart": 1594551600,
+				"secondHalfStart": 1594555200,
 				"round": "Regular Season - 35",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Molineux Stadium",
-				"referee": null,
+				"referee": "A. Taylor",
 				"homeTeam": {
 					"team_id": 39,
 					"team_name": "Wolves",
@@ -1513,17 +943,17 @@
 					"team_name": "Everton",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 3,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "1-0",
+					"fulltime": "3-0",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157348,
+				"fixture_id": 157357,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -1531,31 +961,183 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-20T00:00:00+00:00",
-				"event_timestamp": 1587340800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 34",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"event_date": "2020-07-11T19:00:00+00:00",
+				"event_timestamp": 1594494000,
+				"firstHalfStart": 1594494000,
+				"secondHalfStart": 1594497600,
+				"round": "Regular Season - 35",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "The American Express Community Stadium",
-				"referee": null,
+				"referee": "G. Scott",
 				"homeTeam": {
 					"team_id": 51,
 					"team_name": "Brighton",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/51.png"
 				},
 				"awayTeam": {
+					"team_id": 50,
+					"team_name": "Manchester City",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/50.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 5,
+				"score": {
+					"halftime": "0-2",
+					"fulltime": "0-5",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157361,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-11T16:30:00+00:00",
+				"event_timestamp": 1594485000,
+				"firstHalfStart": 1594485000,
+				"secondHalfStart": 1594488600,
+				"round": "Regular Season - 35",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Bramall Lane",
+				"referee": "A. Marriner",
+				"homeTeam": {
+					"team_id": 62,
+					"team_name": "Sheffield Utd",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
+				},
+				"awayTeam": {
+					"team_id": 49,
+					"team_name": "Chelsea",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
+				},
+				"goalsHomeTeam": 3,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "2-0",
+					"fulltime": "3-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157358,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-11T14:00:00+00:00",
+				"event_timestamp": 1594476000,
+				"firstHalfStart": 1594476000,
+				"secondHalfStart": 1594479600,
+				"round": "Regular Season - 35",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Anfield",
+				"referee": "D. Coote",
+				"homeTeam": {
 					"team_id": 40,
 					"team_name": "Liverpool",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"awayTeam": {
+					"team_id": 44,
+					"team_name": "Burnley",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "1-0",
+					"fulltime": "1-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157360,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-11T11:30:00+00:00",
+				"event_timestamp": 1594467000,
+				"firstHalfStart": 1594467000,
+				"secondHalfStart": 1594470600,
+				"round": "Regular Season - 35",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Carrow Road",
+				"referee": "K. Friend",
+				"homeTeam": {
+					"team_id": 71,
+					"team_name": "Norwich",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
+				},
+				"awayTeam": {
+					"team_id": 48,
+					"team_name": "West Ham",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/48.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 4,
+				"score": {
+					"halftime": "0-2",
+					"fulltime": "0-4",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157363,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-11T11:30:00+00:00",
+				"event_timestamp": 1594467000,
+				"firstHalfStart": 1594467000,
+				"secondHalfStart": 1594470600,
+				"round": "Regular Season - 35",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Vicarage Road",
+				"referee": "C. Pawson",
+				"homeTeam": {
+					"team_id": 38,
+					"team_name": "Watford",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/38.png"
+				},
+				"awayTeam": {
+					"team_id": 34,
+					"team_name": "Newcastle",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/34.png"
+				},
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "0-1",
+					"fulltime": "2-1",
 					"extratime": null,
 					"penalty": null
 				}
@@ -1569,16 +1151,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-19T00:00:00+00:00",
-				"event_timestamp": 1587254400,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-09T19:15:00+00:00",
+				"event_timestamp": 1594322100,
+				"firstHalfStart": 1594322100,
+				"secondHalfStart": 1594325700,
 				"round": "Regular Season - 34",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Villa Park",
-				"referee": null,
+				"referee": "J. Moss",
 				"homeTeam": {
 					"team_id": 66,
 					"team_name": "Aston Villa",
@@ -1589,49 +1171,11 @@
 					"team_name": "Manchester United",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/33.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 3,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157352,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-19T00:00:00+00:00",
-				"event_timestamp": 1587254400,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 34",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Bramall Lane",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 62,
-					"team_name": "Sheffield Utd",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
-				},
-				"awayTeam": {
-					"team_id": 39,
-					"team_name": "Wolves",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/39.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-2",
+					"fulltime": "0-3",
 					"extratime": null,
 					"penalty": null
 				}
@@ -1645,16 +1189,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-18T00:00:00+00:00",
-				"event_timestamp": 1587168000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-09T17:00:00+00:00",
+				"event_timestamp": 1594314000,
+				"firstHalfStart": 1594314000,
+				"secondHalfStart": 1594317600,
 				"round": "Regular Season - 34",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Vitality Stadium",
-				"referee": null,
+				"referee": "P. Tierney",
 				"homeTeam": {
 					"team_id": 35,
 					"team_name": "Bournemouth",
@@ -1665,87 +1209,11 @@
 					"team_name": "Tottenham",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/47.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157346,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-18T00:00:00+00:00",
-				"event_timestamp": 1587168000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 34",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Emirates Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 42,
-					"team_name": "Arsenal",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
-				},
-				"awayTeam": {
-					"team_id": 46,
-					"team_name": "Leicester",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157349,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-18T00:00:00+00:00",
-				"event_timestamp": 1587168000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 34",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Selhurst Park",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 52,
-					"team_name": "Crystal Palace",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
-				},
-				"awayTeam": {
-					"team_id": 49,
-					"team_name": "Chelsea",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-0",
+					"fulltime": "0-0",
 					"extratime": null,
 					"penalty": null
 				}
@@ -1759,16 +1227,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-18T00:00:00+00:00",
-				"event_timestamp": 1587168000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-09T17:00:00+00:00",
+				"event_timestamp": 1594314000,
+				"firstHalfStart": 1594314000,
+				"secondHalfStart": 1594317600,
 				"round": "Regular Season - 34",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Goodison Park",
-				"referee": null,
+				"referee": "L. Mason",
 				"homeTeam": {
 					"team_id": 45,
 					"team_name": "Everton",
@@ -1779,11 +1247,49 @@
 					"team_name": "Southampton",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "1-1",
+					"fulltime": "1-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157348,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-08T19:15:00+00:00",
+				"event_timestamp": 1594235700,
+				"firstHalfStart": 1594235700,
+				"secondHalfStart": 1594239300,
+				"round": "Regular Season - 34",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "The American Express Community Stadium",
+				"referee": "C. Pawson",
+				"homeTeam": {
+					"team_id": 51,
+					"team_name": "Brighton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/51.png"
+				},
+				"awayTeam": {
+					"team_id": 40,
+					"team_name": "Liverpool",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 3,
+				"score": {
+					"halftime": "1-2",
+					"fulltime": "1-3",
 					"extratime": null,
 					"penalty": null
 				}
@@ -1797,16 +1303,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-18T00:00:00+00:00",
-				"event_timestamp": 1587168000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-08T17:00:00+00:00",
+				"event_timestamp": 1594227600,
+				"firstHalfStart": 1594227600,
+				"secondHalfStart": 1594231200,
 				"round": "Regular Season - 34",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Etihad Stadium",
-				"referee": null,
+				"referee": "A. Madley",
 				"homeTeam": {
 					"team_id": 50,
 					"team_name": "Manchester City",
@@ -1817,17 +1323,17 @@
 					"team_name": "Newcastle",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/34.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 5,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "2-0",
+					"fulltime": "5-0",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157353,
+				"fixture_id": 157352,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -1835,31 +1341,31 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-18T00:00:00+00:00",
-				"event_timestamp": 1587168000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-08T17:00:00+00:00",
+				"event_timestamp": 1594227600,
+				"firstHalfStart": 1594227600,
+				"secondHalfStart": 1594231200,
 				"round": "Regular Season - 34",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Vicarage Road",
-				"referee": null,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Bramall Lane",
+				"referee": "M. Atkinson",
 				"homeTeam": {
-					"team_id": 38,
-					"team_name": "Watford",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/38.png"
+					"team_id": 62,
+					"team_name": "Sheffield Utd",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
 				},
 				"awayTeam": {
-					"team_id": 71,
-					"team_name": "Norwich",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
+					"team_id": 39,
+					"team_name": "Wolves",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/39.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-0",
+					"fulltime": "1-0",
 					"extratime": null,
 					"penalty": null
 				}
@@ -1873,16 +1379,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-18T00:00:00+00:00",
-				"event_timestamp": 1587168000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-08T17:00:00+00:00",
+				"event_timestamp": 1594227600,
+				"firstHalfStart": 1594227600,
+				"secondHalfStart": 1594231200,
 				"round": "Regular Season - 34",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "London Stadium",
-				"referee": null,
+				"referee": "M. Oliver",
 				"homeTeam": {
 					"team_id": 48,
 					"team_name": "West Ham",
@@ -1893,17 +1399,17 @@
 					"team_name": "Burnley",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-1",
+					"fulltime": "0-1",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157344,
+				"fixture_id": 157346,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -1911,189 +1417,75 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-13T00:00:00+00:00",
-				"event_timestamp": 1586736000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 33",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Molineux Stadium",
-				"referee": null,
+				"event_date": "2020-07-07T19:15:00+00:00",
+				"event_timestamp": 1594149300,
+				"firstHalfStart": 1594149300,
+				"secondHalfStart": 1594152900,
+				"round": "Regular Season - 34",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Emirates Stadium",
+				"referee": "C. Kavanagh",
 				"homeTeam": {
-					"team_id": 39,
-					"team_name": "Wolves",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/39.png"
-				},
-				"awayTeam": {
 					"team_id": 42,
 					"team_name": "Arsenal",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157336,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-12T00:00:00+00:00",
-				"event_timestamp": 1586649600,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 33",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Stamford Bridge",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 49,
-					"team_name": "Chelsea",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
-				},
 				"awayTeam": {
-					"team_id": 38,
-					"team_name": "Watford",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/38.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157338,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-12T00:00:00+00:00",
-				"event_timestamp": 1586649600,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 33",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Anfield",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 40,
-					"team_name": "Liverpool",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
-				},
-				"awayTeam": {
-					"team_id": 66,
-					"team_name": "Aston Villa",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157335,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-11T00:00:00+00:00",
-				"event_timestamp": 1586563200,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 33",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Turf Moor",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 44,
-					"team_name": "Burnley",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
-				},
-				"awayTeam": {
-					"team_id": 62,
-					"team_name": "Sheffield Utd",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157337,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-11T00:00:00+00:00",
-				"event_timestamp": 1586563200,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 33",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "King Power Stadium",
-				"referee": null,
-				"homeTeam": {
 					"team_id": 46,
 					"team_name": "Leicester",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
 				},
-				"awayTeam": {
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "1-0",
+					"fulltime": "1-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157349,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-07T17:00:00+00:00",
+				"event_timestamp": 1594141200,
+				"firstHalfStart": 1594141200,
+				"secondHalfStart": 1594144800,
+				"round": "Regular Season - 34",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Selhurst Park",
+				"referee": "D. Coote",
+				"homeTeam": {
 					"team_id": 52,
 					"team_name": "Crystal Palace",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"awayTeam": {
+					"team_id": 49,
+					"team_name": "Chelsea",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
+				},
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 3,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "1-2",
+					"fulltime": "2-3",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157339,
+				"fixture_id": 157353,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -2101,107 +1493,31 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-11T00:00:00+00:00",
-				"event_timestamp": 1586563200,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 33",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Old Trafford",
-				"referee": null,
+				"event_date": "2020-07-07T17:00:00+00:00",
+				"event_timestamp": 1594141200,
+				"firstHalfStart": 1594141200,
+				"secondHalfStart": 1594144800,
+				"round": "Regular Season - 34",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Vicarage Road",
+				"referee": "A. Taylor",
 				"homeTeam": {
-					"team_id": 33,
-					"team_name": "Manchester United",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/33.png"
+					"team_id": 38,
+					"team_name": "Watford",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/38.png"
 				},
 				"awayTeam": {
-					"team_id": 35,
-					"team_name": "Bournemouth",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157341,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-11T00:00:00+00:00",
-				"event_timestamp": 1586563200,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 33",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Carrow Road",
-				"referee": null,
-				"homeTeam": {
 					"team_id": 71,
 					"team_name": "Norwich",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
 				},
-				"awayTeam": {
-					"team_id": 51,
-					"team_name": "Brighton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/51.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157342,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-11T00:00:00+00:00",
-				"event_timestamp": 1586563200,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 33",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "St. Mary's Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 41,
-					"team_name": "Southampton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
-				},
-				"awayTeam": {
-					"team_id": 50,
-					"team_name": "Manchester City",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/50.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "1-1",
+					"fulltime": "2-1",
 					"extratime": null,
 					"penalty": null
 				}
@@ -2215,16 +1531,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-11T00:00:00+00:00",
-				"event_timestamp": 1586563200,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-06T19:00:00+00:00",
+				"event_timestamp": 1594062000,
+				"firstHalfStart": 1594062000,
+				"secondHalfStart": 1594065600,
 				"round": "Regular Season - 33",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Tottenham Hotspur Stadium",
-				"referee": null,
+				"referee": "G. Scott",
 				"homeTeam": {
 					"team_id": 47,
 					"team_name": "Tottenham",
@@ -2235,11 +1551,87 @@
 					"team_name": "Everton",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "1-0",
+					"fulltime": "1-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157342,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-05T18:00:00+00:00",
+				"event_timestamp": 1593972000,
+				"firstHalfStart": 1593972000,
+				"secondHalfStart": 1593975600,
+				"round": "Regular Season - 33",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "St. Mary's Stadium",
+				"referee": "A. Marriner",
+				"homeTeam": {
+					"team_id": 41,
+					"team_name": "Southampton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
+				},
+				"awayTeam": {
+					"team_id": 50,
+					"team_name": "Manchester City",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/50.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "1-0",
+					"fulltime": "1-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157338,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-05T15:30:00+00:00",
+				"event_timestamp": 1593963000,
+				"firstHalfStart": 1593963000,
+				"secondHalfStart": 1593966600,
+				"round": "Regular Season - 33",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Anfield",
+				"referee": "P. Tierney",
+				"homeTeam": {
+					"team_id": 40,
+					"team_name": "Liverpool",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+				},
+				"awayTeam": {
+					"team_id": 66,
+					"team_name": "Aston Villa",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
+				},
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "2-0",
 					"extratime": null,
 					"penalty": null
 				}
@@ -2253,16 +1645,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-10T00:00:00+00:00",
-				"event_timestamp": 1586476800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-05T13:15:00+00:00",
+				"event_timestamp": 1593954900,
+				"firstHalfStart": 1593954900,
+				"secondHalfStart": 1593958500,
 				"round": "Regular Season - 33",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "St. James' Park",
-				"referee": null,
+				"referee": "C. Pawson",
 				"homeTeam": {
 					"team_id": 34,
 					"team_name": "Newcastle",
@@ -2273,17 +1665,17 @@
 					"team_name": "West Ham",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/48.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 2,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "1-1",
+					"fulltime": "2-2",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157330,
+				"fixture_id": 157335,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -2291,31 +1683,221 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-06T00:00:00+00:00",
-				"event_timestamp": 1586131200,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 32",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Goodison Park",
-				"referee": null,
+				"event_date": "2020-07-05T11:00:00+00:00",
+				"event_timestamp": 1593946800,
+				"firstHalfStart": 1593946800,
+				"secondHalfStart": 1593950400,
+				"round": "Regular Season - 33",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Turf Moor",
+				"referee": "P. Bankes",
 				"homeTeam": {
-					"team_id": 45,
-					"team_name": "Everton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png"
+					"team_id": 44,
+					"team_name": "Burnley",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
 				},
 				"awayTeam": {
+					"team_id": 62,
+					"team_name": "Sheffield Utd",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "1-0",
+					"fulltime": "1-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157336,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-04T19:00:00+00:00",
+				"event_timestamp": 1593889200,
+				"firstHalfStart": 1593889200,
+				"secondHalfStart": 1593892800,
+				"round": "Regular Season - 33",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Stamford Bridge",
+				"referee": "K. Friend",
+				"homeTeam": {
+					"team_id": 49,
+					"team_name": "Chelsea",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
+				},
+				"awayTeam": {
+					"team_id": 38,
+					"team_name": "Watford",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/38.png"
+				},
+				"goalsHomeTeam": 3,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "2-0",
+					"fulltime": "3-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157344,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-04T16:30:00+00:00",
+				"event_timestamp": 1593880200,
+				"firstHalfStart": 1593880200,
+				"secondHalfStart": 1593883800,
+				"round": "Regular Season - 33",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Molineux Stadium",
+				"referee": "M. Oliver",
+				"homeTeam": {
+					"team_id": 39,
+					"team_name": "Wolves",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/39.png"
+				},
+				"awayTeam": {
+					"team_id": 42,
+					"team_name": "Arsenal",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 2,
+				"score": {
+					"halftime": "0-1",
+					"fulltime": "0-2",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157337,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-04T14:00:00+00:00",
+				"event_timestamp": 1593871200,
+				"firstHalfStart": 1593871200,
+				"secondHalfStart": 1593874800,
+				"round": "Regular Season - 33",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "King Power Stadium",
+				"referee": "J. Moss",
+				"homeTeam": {
 					"team_id": 46,
 					"team_name": "Leicester",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"awayTeam": {
+					"team_id": 52,
+					"team_name": "Crystal Palace",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
+				},
+				"goalsHomeTeam": 3,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-0",
+					"fulltime": "3-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157339,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-04T14:00:00+00:00",
+				"event_timestamp": 1593871200,
+				"firstHalfStart": 1593871200,
+				"secondHalfStart": 1593874800,
+				"round": "Regular Season - 33",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Old Trafford",
+				"referee": "M. Dean",
+				"homeTeam": {
+					"team_id": 33,
+					"team_name": "Manchester United",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/33.png"
+				},
+				"awayTeam": {
+					"team_id": 35,
+					"team_name": "Bournemouth",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+				},
+				"goalsHomeTeam": 5,
+				"goalsAwayTeam": 2,
+				"score": {
+					"halftime": "3-1",
+					"fulltime": "5-2",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157341,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-04T11:30:00+00:00",
+				"event_timestamp": 1593862200,
+				"firstHalfStart": 1593862200,
+				"secondHalfStart": 1593865800,
+				"round": "Regular Season - 33",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Carrow Road",
+				"referee": "S. Attwell",
+				"homeTeam": {
+					"team_id": 71,
+					"team_name": "Norwich",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
+				},
+				"awayTeam": {
+					"team_id": 51,
+					"team_name": "Brighton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/51.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "0-1",
+					"fulltime": "0-1",
 					"extratime": null,
 					"penalty": null
 				}
@@ -2329,16 +1911,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-05T00:00:00+00:00",
-				"event_timestamp": 1586044800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-02T19:15:00+00:00",
+				"event_timestamp": 1593717300,
+				"firstHalfStart": 1593717300,
+				"secondHalfStart": 1593720900,
 				"round": "Regular Season - 32",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Etihad Stadium",
-				"referee": null,
+				"referee": "A. Taylor",
 				"homeTeam": {
 					"team_id": 50,
 					"team_name": "Manchester City",
@@ -2349,239 +1931,11 @@
 					"team_name": "Liverpool",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 4,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157334,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-05T00:00:00+00:00",
-				"event_timestamp": 1586044800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 32",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "London Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 48,
-					"team_name": "West Ham",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/48.png"
-				},
-				"awayTeam": {
-					"team_id": 49,
-					"team_name": "Chelsea",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157325,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-04T00:00:00+00:00",
-				"event_timestamp": 1585958400,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 32",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Vitality Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 35,
-					"team_name": "Bournemouth",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
-				},
-				"awayTeam": {
-					"team_id": 34,
-					"team_name": "Newcastle",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/34.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157326,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-04T00:00:00+00:00",
-				"event_timestamp": 1585958400,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 32",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Emirates Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 42,
-					"team_name": "Arsenal",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
-				},
-				"awayTeam": {
-					"team_id": 71,
-					"team_name": "Norwich",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157327,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-04T00:00:00+00:00",
-				"event_timestamp": 1585958400,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 32",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Villa Park",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 66,
-					"team_name": "Aston Villa",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
-				},
-				"awayTeam": {
-					"team_id": 39,
-					"team_name": "Wolves",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/39.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157328,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-04T00:00:00+00:00",
-				"event_timestamp": 1585958400,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 32",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "The American Express Community Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 51,
-					"team_name": "Brighton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/51.png"
-				},
-				"awayTeam": {
-					"team_id": 33,
-					"team_name": "Manchester United",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/33.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157329,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-04-04T00:00:00+00:00",
-				"event_timestamp": 1585958400,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 32",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Selhurst Park",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 52,
-					"team_name": "Crystal Palace",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
-				},
-				"awayTeam": {
-					"team_id": 44,
-					"team_name": "Burnley",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "3-0",
+					"fulltime": "4-0",
 					"extratime": null,
 					"penalty": null
 				}
@@ -2595,16 +1949,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-04T00:00:00+00:00",
-				"event_timestamp": 1585958400,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-07-02T17:00:00+00:00",
+				"event_timestamp": 1593709200,
+				"firstHalfStart": 1593709200,
+				"secondHalfStart": 1593712800,
 				"round": "Regular Season - 32",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Bramall Lane",
-				"referee": null,
+				"referee": "C. Kavanagh",
 				"homeTeam": {
 					"team_id": 62,
 					"team_name": "Sheffield Utd",
@@ -2615,11 +1969,239 @@
 					"team_name": "Tottenham",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/47.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 3,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "1-0",
+					"fulltime": "3-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157334,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-01T19:15:00+00:00",
+				"event_timestamp": 1593630900,
+				"firstHalfStart": 1593630900,
+				"secondHalfStart": 1593634500,
+				"round": "Regular Season - 32",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "London Stadium",
+				"referee": "M. Atkinson",
+				"homeTeam": {
+					"team_id": 48,
+					"team_name": "West Ham",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/48.png"
+				},
+				"awayTeam": {
+					"team_id": 49,
+					"team_name": "Chelsea",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
+				},
+				"goalsHomeTeam": 3,
+				"goalsAwayTeam": 2,
+				"score": {
+					"halftime": "1-1",
+					"fulltime": "3-2",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157325,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-01T17:00:00+00:00",
+				"event_timestamp": 1593622800,
+				"firstHalfStart": 1593622800,
+				"secondHalfStart": 1593626400,
+				"round": "Regular Season - 32",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Vitality Stadium",
+				"referee": "K. Friend",
+				"homeTeam": {
+					"team_id": 35,
+					"team_name": "Bournemouth",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+				},
+				"awayTeam": {
+					"team_id": 34,
+					"team_name": "Newcastle",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/34.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 4,
+				"score": {
+					"halftime": "0-2",
+					"fulltime": "1-4",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157326,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-01T17:00:00+00:00",
+				"event_timestamp": 1593622800,
+				"firstHalfStart": 1593622800,
+				"secondHalfStart": 1593626400,
+				"round": "Regular Season - 32",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Emirates Stadium",
+				"referee": "P. Bankes",
+				"homeTeam": {
+					"team_id": 42,
+					"team_name": "Arsenal",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
+				},
+				"awayTeam": {
+					"team_id": 71,
+					"team_name": "Norwich",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
+				},
+				"goalsHomeTeam": 4,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "2-0",
+					"fulltime": "4-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157330,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-07-01T17:00:00+00:00",
+				"event_timestamp": 1593622800,
+				"firstHalfStart": 1593622800,
+				"secondHalfStart": 1593626400,
+				"round": "Regular Season - 32",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Goodison Park",
+				"referee": "D. Coote",
+				"homeTeam": {
+					"team_id": 45,
+					"team_name": "Everton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png"
+				},
+				"awayTeam": {
+					"team_id": 46,
+					"team_name": "Leicester",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
+				},
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "2-0",
+					"fulltime": "2-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157328,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-06-30T19:15:00+00:00",
+				"event_timestamp": 1593544500,
+				"firstHalfStart": 1593544500,
+				"secondHalfStart": 1593548100,
+				"round": "Regular Season - 32",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "The American Express Community Stadium",
+				"referee": "A. Marriner",
+				"homeTeam": {
+					"team_id": 51,
+					"team_name": "Brighton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/51.png"
+				},
+				"awayTeam": {
+					"team_id": 33,
+					"team_name": "Manchester United",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/33.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 3,
+				"score": {
+					"halftime": "0-2",
+					"fulltime": "0-3",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157329,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-06-29T19:00:00+00:00",
+				"event_timestamp": 1593457200,
+				"firstHalfStart": 1593457200,
+				"secondHalfStart": 1593460800,
+				"round": "Regular Season - 32",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Selhurst Park",
+				"referee": "S. Hooper",
+				"homeTeam": {
+					"team_id": 52,
+					"team_name": "Crystal Palace",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
+				},
+				"awayTeam": {
+					"team_id": 44,
+					"team_name": "Burnley",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "0-1",
 					"extratime": null,
 					"penalty": null
 				}
@@ -2633,16 +2215,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-04-04T00:00:00+00:00",
-				"event_timestamp": 1585958400,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-06-28T15:30:00+00:00",
+				"event_timestamp": 1593358200,
+				"firstHalfStart": 1593358200,
+				"secondHalfStart": 1593361800,
 				"round": "Regular Season - 32",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Vicarage Road",
-				"referee": null,
+				"referee": "M. Oliver",
 				"homeTeam": {
 					"team_id": 38,
 					"team_name": "Watford",
@@ -2653,17 +2235,17 @@
 					"team_name": "Southampton",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 3,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-1",
+					"fulltime": "1-3",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157317,
+				"fixture_id": 157327,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -2671,183 +2253,31 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-03-22T00:00:00+00:00",
-				"event_timestamp": 1584835200,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 31",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "King Power Stadium",
-				"referee": null,
+				"event_date": "2020-06-27T11:30:00+00:00",
+				"event_timestamp": 1593257400,
+				"firstHalfStart": 1593257400,
+				"secondHalfStart": 1593261000,
+				"round": "Regular Season - 32",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Villa Park",
+				"referee": "C. Pawson",
 				"homeTeam": {
-					"team_id": 46,
-					"team_name": "Leicester",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
+					"team_id": 66,
+					"team_name": "Aston Villa",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
 				},
 				"awayTeam": {
-					"team_id": 51,
-					"team_name": "Brighton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/51.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157319,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-03-22T00:00:00+00:00",
-				"event_timestamp": 1584835200,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 31",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Old Trafford",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 33,
-					"team_name": "Manchester United",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/33.png"
-				},
-				"awayTeam": {
-					"team_id": 62,
-					"team_name": "Sheffield Utd",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157322,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-03-22T00:00:00+00:00",
-				"event_timestamp": 1584835200,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 31",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "St. Mary's Stadium",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 41,
-					"team_name": "Southampton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
-				},
-				"awayTeam": {
-					"team_id": 42,
-					"team_name": "Arsenal",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157324,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-03-22T00:00:00+00:00",
-				"event_timestamp": 1584835200,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 31",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Molineux Stadium",
-				"referee": null,
-				"homeTeam": {
 					"team_id": 39,
 					"team_name": "Wolves",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/39.png"
 				},
-				"awayTeam": {
-					"team_id": 35,
-					"team_name": "Bournemouth",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157315,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-03-21T00:00:00+00:00",
-				"event_timestamp": 1584748800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 31",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Turf Moor",
-				"referee": null,
-				"homeTeam": {
-					"team_id": 44,
-					"team_name": "Burnley",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
-				},
-				"awayTeam": {
-					"team_id": 38,
-					"team_name": "Watford",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/38.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-0",
+					"fulltime": "0-1",
 					"extratime": null,
 					"penalty": null
 				}
@@ -2861,16 +2291,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-03-21T00:00:00+00:00",
-				"event_timestamp": 1584748800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-06-25T19:15:00+00:00",
+				"event_timestamp": 1593112500,
+				"firstHalfStart": 1593112500,
+				"secondHalfStart": 1593116100,
 				"round": "Regular Season - 31",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Stamford Bridge",
-				"referee": null,
+				"referee": "S. Attwell",
 				"homeTeam": {
 					"team_id": 49,
 					"team_name": "Chelsea",
@@ -2881,11 +2311,87 @@
 					"team_name": "Manchester City",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/50.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "1-0",
+					"fulltime": "2-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157315,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-06-25T17:00:00+00:00",
+				"event_timestamp": 1593104400,
+				"firstHalfStart": 1593104400,
+				"secondHalfStart": 1593108000,
+				"round": "Regular Season - 31",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Turf Moor",
+				"referee": "M. Dean",
+				"homeTeam": {
+					"team_id": 44,
+					"team_name": "Burnley",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
+				},
+				"awayTeam": {
+					"team_id": 38,
+					"team_name": "Watford",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/38.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "1-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157322,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-06-25T17:00:00+00:00",
+				"event_timestamp": 1593104400,
+				"firstHalfStart": 1593104400,
+				"secondHalfStart": 1593108000,
+				"round": "Regular Season - 31",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "St. Mary's Stadium",
+				"referee": "G. Scott",
+				"homeTeam": {
+					"team_id": 41,
+					"team_name": "Southampton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
+				},
+				"awayTeam": {
+					"team_id": 42,
+					"team_name": "Arsenal",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 2,
+				"score": {
+					"halftime": "0-1",
+					"fulltime": "0-2",
 					"extratime": null,
 					"penalty": null
 				}
@@ -2899,16 +2405,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-03-21T00:00:00+00:00",
-				"event_timestamp": 1584748800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-06-24T19:15:00+00:00",
+				"event_timestamp": 1593026100,
+				"firstHalfStart": 1593026100,
+				"secondHalfStart": 1593029700,
 				"round": "Regular Season - 31",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Anfield",
-				"referee": null,
+				"referee": "M. Atkinson",
 				"homeTeam": {
 					"team_id": 40,
 					"team_name": "Liverpool",
@@ -2919,11 +2425,49 @@
 					"team_name": "Crystal Palace",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 4,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "2-0",
+					"fulltime": "4-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157319,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-06-24T17:00:00+00:00",
+				"event_timestamp": 1593018000,
+				"firstHalfStart": 1593018000,
+				"secondHalfStart": 1593021600,
+				"round": "Regular Season - 31",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Old Trafford",
+				"referee": "A. Taylor",
+				"homeTeam": {
+					"team_id": 33,
+					"team_name": "Manchester United",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/33.png"
+				},
+				"awayTeam": {
+					"team_id": 62,
+					"team_name": "Sheffield Utd",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
+				},
+				"goalsHomeTeam": 3,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "2-0",
+					"fulltime": "3-0",
 					"extratime": null,
 					"penalty": null
 				}
@@ -2937,16 +2481,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-03-21T00:00:00+00:00",
-				"event_timestamp": 1584748800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-06-24T17:00:00+00:00",
+				"event_timestamp": 1593018000,
+				"firstHalfStart": 1593018000,
+				"secondHalfStart": 1593021600,
 				"round": "Regular Season - 31",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "St. James' Park",
-				"referee": null,
+				"referee": "C. Kavanagh",
 				"homeTeam": {
 					"team_id": 34,
 					"team_name": "Newcastle",
@@ -2957,11 +2501,11 @@
 					"team_name": "Aston Villa",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-0",
+					"fulltime": "1-1",
 					"extratime": null,
 					"penalty": null
 				}
@@ -2975,16 +2519,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-03-21T00:00:00+00:00",
-				"event_timestamp": 1584748800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-06-24T17:00:00+00:00",
+				"event_timestamp": 1593018000,
+				"firstHalfStart": 1593018000,
+				"secondHalfStart": 1593021600,
 				"round": "Regular Season - 31",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Carrow Road",
-				"referee": null,
+				"referee": "A. Madley",
 				"homeTeam": {
 					"team_id": 71,
 					"team_name": "Norwich",
@@ -2995,11 +2539,49 @@
 					"team_name": "Everton",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-0",
+					"fulltime": "0-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157324,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-06-24T17:00:00+00:00",
+				"event_timestamp": 1593018000,
+				"firstHalfStart": 1593018000,
+				"secondHalfStart": 1593021600,
+				"round": "Regular Season - 31",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Molineux Stadium",
+				"referee": "M. Oliver",
+				"homeTeam": {
+					"team_id": 39,
+					"team_name": "Wolves",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/39.png"
+				},
+				"awayTeam": {
+					"team_id": 35,
+					"team_name": "Bournemouth",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "1-0",
 					"extratime": null,
 					"penalty": null
 				}
@@ -3013,16 +2595,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-03-20T00:00:00+00:00",
-				"event_timestamp": 1584662400,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-06-23T19:15:00+00:00",
+				"event_timestamp": 1592939700,
+				"firstHalfStart": 1592939700,
+				"secondHalfStart": 1592943300,
 				"round": "Regular Season - 31",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Tottenham Hotspur Stadium",
-				"referee": null,
+				"referee": "C. Pawson",
 				"homeTeam": {
 					"team_id": 47,
 					"team_name": "Tottenham",
@@ -3033,17 +2615,17 @@
 					"team_name": "West Ham",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/48.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-0",
+					"fulltime": "2-0",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157308,
+				"fixture_id": 157317,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -3051,221 +2633,31 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-03-16T00:00:00+00:00",
-				"event_timestamp": 1584316800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 30",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Goodison Park",
-				"referee": "M. Atkinson",
+				"event_date": "2020-06-23T17:00:00+00:00",
+				"event_timestamp": 1592931600,
+				"firstHalfStart": 1592931600,
+				"secondHalfStart": 1592935200,
+				"round": "Regular Season - 31",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "King Power Stadium",
+				"referee": "L. Mason",
 				"homeTeam": {
-					"team_id": 45,
-					"team_name": "Everton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png"
+					"team_id": 46,
+					"team_name": "Leicester",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
 				},
 				"awayTeam": {
-					"team_id": 40,
-					"team_name": "Liverpool",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157312,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-03-15T00:00:00+00:00",
-				"event_timestamp": 1584230400,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 30",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Tottenham Hotspur Stadium",
-				"referee": "M. Oliver",
-				"homeTeam": {
-					"team_id": 47,
-					"team_name": "Tottenham",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/47.png"
-				},
-				"awayTeam": {
-					"team_id": 33,
-					"team_name": "Manchester United",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/33.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157314,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-03-15T00:00:00+00:00",
-				"event_timestamp": 1584230400,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 30",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "London Stadium",
-				"referee": "C. Kavanagh",
-				"homeTeam": {
-					"team_id": 48,
-					"team_name": "West Ham",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/48.png"
-				},
-				"awayTeam": {
-					"team_id": 39,
-					"team_name": "Wolves",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/39.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157305,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-03-14T00:00:00+00:00",
-				"event_timestamp": 1584144000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 30",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Vitality Stadium",
-				"referee": "M. Dean",
-				"homeTeam": {
-					"team_id": 35,
-					"team_name": "Bournemouth",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
-				},
-				"awayTeam": {
-					"team_id": 52,
-					"team_name": "Crystal Palace",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157306,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-03-14T00:00:00+00:00",
-				"event_timestamp": 1584144000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 30",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Villa Park",
-				"referee": "A. Taylor",
-				"homeTeam": {
-					"team_id": 66,
-					"team_name": "Aston Villa",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
-				},
-				"awayTeam": {
-					"team_id": 49,
-					"team_name": "Chelsea",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
-				"score": {
-					"halftime": null,
-					"fulltime": null,
-					"extratime": null,
-					"penalty": null
-				}
-			},
-			{
-				"fixture_id": 157307,
-				"league_id": 524,
-				"league": {
-					"name": "Premier League",
-					"country": "England",
-					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
-					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
-				},
-				"event_date": "2020-03-14T00:00:00+00:00",
-				"event_timestamp": 1584144000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
-				"round": "Regular Season - 30",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "The American Express Community Stadium",
-				"referee": "P. Tierney",
-				"homeTeam": {
 					"team_id": 51,
 					"team_name": "Brighton",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/51.png"
 				},
-				"awayTeam": {
-					"team_id": 42,
-					"team_name": "Arsenal",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
-				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-0",
+					"fulltime": "0-0",
 					"extratime": null,
 					"penalty": null
 				}
@@ -3279,16 +2671,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-03-14T00:00:00+00:00",
-				"event_timestamp": 1584144000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-06-22T19:00:00+00:00",
+				"event_timestamp": 1592852400,
+				"firstHalfStart": 1592852400,
+				"secondHalfStart": 1592856000,
 				"round": "Regular Season - 30",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Etihad Stadium",
-				"referee": "C. Pawson",
+				"referee": "A. Marriner",
 				"homeTeam": {
 					"team_id": 50,
 					"team_name": "Manchester City",
@@ -3299,11 +2691,87 @@
 					"team_name": "Burnley",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 5,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "3-0",
+					"fulltime": "5-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157308,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-06-21T18:00:00+00:00",
+				"event_timestamp": 1592762400,
+				"firstHalfStart": 1592762400,
+				"secondHalfStart": 1592766000,
+				"round": "Regular Season - 30",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Goodison Park",
+				"referee": "M. Dean",
+				"homeTeam": {
+					"team_id": 45,
+					"team_name": "Everton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png"
+				},
+				"awayTeam": {
+					"team_id": 40,
+					"team_name": "Liverpool",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "0-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157306,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-06-21T15:15:00+00:00",
+				"event_timestamp": 1592752500,
+				"firstHalfStart": 1592752500,
+				"secondHalfStart": 1592756100,
+				"round": "Regular Season - 30",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Villa Park",
+				"referee": "P. Tierney",
+				"homeTeam": {
+					"team_id": 66,
+					"team_name": "Aston Villa",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
+				},
+				"awayTeam": {
+					"team_id": 49,
+					"team_name": "Chelsea",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 2,
+				"score": {
+					"halftime": "1-0",
+					"fulltime": "1-2",
 					"extratime": null,
 					"penalty": null
 				}
@@ -3317,14 +2785,14 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-03-14T00:00:00+00:00",
-				"event_timestamp": 1584144000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-06-21T13:00:00+00:00",
+				"event_timestamp": 1592744400,
+				"firstHalfStart": 1592744400,
+				"secondHalfStart": 1592748000,
 				"round": "Regular Season - 30",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "St. James' Park",
 				"referee": "D. Coote",
 				"homeTeam": {
@@ -3337,17 +2805,17 @@
 					"team_name": "Sheffield Utd",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 3,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-0",
+					"fulltime": "3-0",
 					"extratime": null,
 					"penalty": null
 				}
 			},
 			{
-				"fixture_id": 157311,
+				"fixture_id": 157305,
 				"league_id": 524,
 				"league": {
 					"name": "Premier League",
@@ -3355,31 +2823,107 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-03-14T00:00:00+00:00",
-				"event_timestamp": 1584144000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-06-20T18:45:00+00:00",
+				"event_timestamp": 1592678700,
+				"firstHalfStart": 1592678700,
+				"secondHalfStart": 1592682300,
 				"round": "Regular Season - 30",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
-				"venue": "Carrow Road",
-				"referee": "L. Mason",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Vitality Stadium",
+				"referee": "S. Attwell",
 				"homeTeam": {
-					"team_id": 71,
-					"team_name": "Norwich",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
+					"team_id": 35,
+					"team_name": "Bournemouth",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
 				},
 				"awayTeam": {
-					"team_id": 41,
-					"team_name": "Southampton",
-					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
+					"team_id": 52,
+					"team_name": "Crystal Palace",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 2,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-2",
+					"fulltime": "0-2",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157314,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-06-20T16:30:00+00:00",
+				"event_timestamp": 1592670600,
+				"firstHalfStart": 1592670600,
+				"secondHalfStart": 1592674200,
+				"round": "Regular Season - 30",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "London Stadium",
+				"referee": "A. Taylor",
+				"homeTeam": {
+					"team_id": 48,
+					"team_name": "West Ham",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/48.png"
+				},
+				"awayTeam": {
+					"team_id": 39,
+					"team_name": "Wolves",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/39.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 2,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "0-2",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157307,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-06-20T14:00:00+00:00",
+				"event_timestamp": 1592661600,
+				"firstHalfStart": 1592661600,
+				"secondHalfStart": 1592665200,
+				"round": "Regular Season - 30",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "The American Express Community Stadium",
+				"referee": "M. Atkinson",
+				"homeTeam": {
+					"team_id": 51,
+					"team_name": "Brighton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/51.png"
+				},
+				"awayTeam": {
+					"team_id": 42,
+					"team_name": "Arsenal",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
+				},
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "2-1",
 					"extratime": null,
 					"penalty": null
 				}
@@ -3393,16 +2937,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-03-14T00:00:00+00:00",
-				"event_timestamp": 1584144000,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-06-20T11:30:00+00:00",
+				"event_timestamp": 1592652600,
+				"firstHalfStart": 1592652600,
+				"secondHalfStart": 1592656200,
 				"round": "Regular Season - 30",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Vicarage Road",
-				"referee": "S. Attwell",
+				"referee": "C. Pawson",
 				"homeTeam": {
 					"team_id": 38,
 					"team_name": "Watford",
@@ -3413,11 +2957,87 @@
 					"team_name": "Leicester",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 1,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "0-0",
+					"fulltime": "1-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157312,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-06-19T19:15:00+00:00",
+				"event_timestamp": 1592594100,
+				"firstHalfStart": 1592594100,
+				"secondHalfStart": 1592597700,
+				"round": "Regular Season - 30",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Tottenham Hotspur Stadium",
+				"referee": "J. Moss",
+				"homeTeam": {
+					"team_id": 47,
+					"team_name": "Tottenham",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/47.png"
+				},
+				"awayTeam": {
+					"team_id": 33,
+					"team_name": "Manchester United",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/33.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "1-0",
+					"fulltime": "1-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157311,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-06-19T17:00:00+00:00",
+				"event_timestamp": 1592586000,
+				"firstHalfStart": 1592586000,
+				"secondHalfStart": 1592589600,
+				"round": "Regular Season - 30",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Carrow Road",
+				"referee": "K. Friend",
+				"homeTeam": {
+					"team_id": 71,
+					"team_name": "Norwich",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
+				},
+				"awayTeam": {
+					"team_id": 41,
+					"team_name": "Southampton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 3,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "0-3",
 					"extratime": null,
 					"penalty": null
 				}
@@ -3431,16 +3051,16 @@
 					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
 					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
 				},
-				"event_date": "2020-03-11T00:00:00+00:00",
-				"event_timestamp": 1583884800,
-				"firstHalfStart": null,
-				"secondHalfStart": null,
+				"event_date": "2020-06-17T19:15:00+00:00",
+				"event_timestamp": 1592421300,
+				"firstHalfStart": 1592421300,
+				"secondHalfStart": 1592424900,
 				"round": "Regular Season - 28",
-				"status": "Match Postponed",
-				"statusShort": "PST",
-				"elapsed": 0,
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
 				"venue": "Etihad Stadium",
-				"referee": "J. Moss",
+				"referee": "A. Taylor",
 				"homeTeam": {
 					"team_id": 50,
 					"team_name": "Manchester City",
@@ -3451,11 +3071,49 @@
 					"team_name": "Arsenal",
 					"logo": "https:\/\/media.api-sports.io\/football\/teams\/42.png"
 				},
-				"goalsHomeTeam": null,
-				"goalsAwayTeam": null,
+				"goalsHomeTeam": 3,
+				"goalsAwayTeam": 0,
 				"score": {
-					"halftime": null,
-					"fulltime": null,
+					"halftime": "1-0",
+					"fulltime": "3-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157286,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-06-17T17:00:00+00:00",
+				"event_timestamp": 1592413200,
+				"firstHalfStart": 1592413200,
+				"secondHalfStart": 1592416800,
+				"round": "Regular Season - 28",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Villa Park",
+				"referee": "M. Oliver",
+				"homeTeam": {
+					"team_id": 66,
+					"team_name": "Aston Villa",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/66.png"
+				},
+				"awayTeam": {
+					"team_id": 62,
+					"team_name": "Sheffield Utd",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/62.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "0-0",
 					"extratime": null,
 					"penalty": null
 				}
@@ -3478,7 +3136,7 @@
 				"statusShort": "FT",
 				"elapsed": 90,
 				"venue": "King Power Stadium",
-				"referee": "Michael Oliver, England",
+				"referee": "M. Oliver",
 				"homeTeam": {
 					"team_id": 46,
 					"team_name": "Leicester",
@@ -3516,7 +3174,7 @@
 				"statusShort": "FT",
 				"elapsed": 90,
 				"venue": "Old Trafford",
-				"referee": "Mike Dean, England",
+				"referee": "M. Dean",
 				"homeTeam": {
 					"team_id": 33,
 					"team_name": "Manchester United",
@@ -3554,7 +3212,7 @@
 				"statusShort": "FT",
 				"elapsed": 90,
 				"venue": "Stamford Bridge",
-				"referee": "Kevin Friend, England",
+				"referee": "K. Friend",
 				"homeTeam": {
 					"team_id": 49,
 					"team_name": "Chelsea",
@@ -3592,7 +3250,7 @@
 				"statusShort": "FT",
 				"elapsed": 90,
 				"venue": "Turf Moor",
-				"referee": "Jonathan Moss, England",
+				"referee": "J. Moss",
 				"homeTeam": {
 					"team_id": 44,
 					"team_name": "Burnley",
@@ -3630,7 +3288,7 @@
 				"statusShort": "FT",
 				"elapsed": 90,
 				"venue": "Molineux Stadium",
-				"referee": "Andre Marriner, England",
+				"referee": "A. Marriner",
 				"homeTeam": {
 					"team_id": 39,
 					"team_name": "Wolves",
@@ -3668,7 +3326,7 @@
 				"statusShort": "FT",
 				"elapsed": 90,
 				"venue": "Emirates Stadium",
-				"referee": "Martin Atkinson, England",
+				"referee": "M. Atkinson",
 				"homeTeam": {
 					"team_id": 42,
 					"team_name": "Arsenal",
@@ -3706,7 +3364,7 @@
 				"statusShort": "FT",
 				"elapsed": 90,
 				"venue": "Selhurst Park",
-				"referee": "Anthony Taylor, England",
+				"referee": "A. Taylor",
 				"homeTeam": {
 					"team_id": 52,
 					"team_name": "Crystal Palace",
@@ -3744,7 +3402,7 @@
 				"statusShort": "FT",
 				"elapsed": 90,
 				"venue": "Bramall Lane",
-				"referee": "Simon Hooper, England",
+				"referee": "S. Hooper",
 				"homeTeam": {
 					"team_id": 62,
 					"team_name": "Sheffield Utd",
@@ -3782,7 +3440,7 @@
 				"statusShort": "FT",
 				"elapsed": 90,
 				"venue": "St. Mary's Stadium",
-				"referee": "Graham Scott, England",
+				"referee": "G. Scott",
 				"homeTeam": {
 					"team_id": 41,
 					"team_name": "Southampton",
@@ -3798,6 +3456,348 @@
 				"score": {
 					"halftime": "0-0",
 					"fulltime": "0-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157300,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-03-07T12:30:00+00:00",
+				"event_timestamp": 1583584200,
+				"firstHalfStart": 1583584200,
+				"secondHalfStart": 1583587800,
+				"round": "Regular Season - 29",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Anfield",
+				"referee": "P. Tierney",
+				"homeTeam": {
+					"team_id": 40,
+					"team_name": "Liverpool",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+				},
+				"awayTeam": {
+					"team_id": 35,
+					"team_name": "Bournemouth",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+				},
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "2-1",
+					"fulltime": "2-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157288,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-03-01T14:00:00+00:00",
+				"event_timestamp": 1583071200,
+				"firstHalfStart": 1583071200,
+				"secondHalfStart": 1583074800,
+				"round": "Regular Season - 28",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Goodison Park",
+				"referee": "C. Kavanagh",
+				"homeTeam": {
+					"team_id": 45,
+					"team_name": "Everton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/45.png"
+				},
+				"awayTeam": {
+					"team_id": 33,
+					"team_name": "Manchester United",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/33.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "1-1",
+					"fulltime": "1-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157292,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-03-01T14:00:00+00:00",
+				"event_timestamp": 1583071200,
+				"firstHalfStart": 1583071200,
+				"secondHalfStart": 1583074800,
+				"round": "Regular Season - 28",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Tottenham Hotspur Stadium",
+				"referee": "S. Attwell",
+				"homeTeam": {
+					"team_id": 47,
+					"team_name": "Tottenham",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/47.png"
+				},
+				"awayTeam": {
+					"team_id": 39,
+					"team_name": "Wolves",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/39.png"
+				},
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 3,
+				"score": {
+					"halftime": "2-1",
+					"fulltime": "2-3",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157293,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-02-29T17:30:00+00:00",
+				"event_timestamp": 1582997400,
+				"firstHalfStart": 1582997400,
+				"secondHalfStart": 1583001000,
+				"round": "Regular Season - 28",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Vicarage Road",
+				"referee": "M. Oliver",
+				"homeTeam": {
+					"team_id": 38,
+					"team_name": "Watford",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/38.png"
+				},
+				"awayTeam": {
+					"team_id": 40,
+					"team_name": "Liverpool",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/40.png"
+				},
+				"goalsHomeTeam": 3,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "3-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157285,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-02-29T15:00:00+00:00",
+				"event_timestamp": 1582988400,
+				"firstHalfStart": 1582988400,
+				"secondHalfStart": 1582992000,
+				"round": "Regular Season - 28",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Vitality Stadium",
+				"referee": "A. Marriner",
+				"homeTeam": {
+					"team_id": 35,
+					"team_name": "Bournemouth",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/35.png"
+				},
+				"awayTeam": {
+					"team_id": 49,
+					"team_name": "Chelsea",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/49.png"
+				},
+				"goalsHomeTeam": 2,
+				"goalsAwayTeam": 2,
+				"score": {
+					"halftime": "0-1",
+					"fulltime": "2-2",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157290,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-02-29T15:00:00+00:00",
+				"event_timestamp": 1582988400,
+				"firstHalfStart": 1582988400,
+				"secondHalfStart": 1582992000,
+				"round": "Regular Season - 28",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "St. James' Park",
+				"referee": "A. Madley",
+				"homeTeam": {
+					"team_id": 34,
+					"team_name": "Newcastle",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/34.png"
+				},
+				"awayTeam": {
+					"team_id": 44,
+					"team_name": "Burnley",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/44.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "0-0",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157294,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-02-29T15:00:00+00:00",
+				"event_timestamp": 1582988400,
+				"firstHalfStart": 1582988400,
+				"secondHalfStart": 1582992000,
+				"round": "Regular Season - 28",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "London Stadium",
+				"referee": "A. Taylor",
+				"homeTeam": {
+					"team_id": 48,
+					"team_name": "West Ham",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/48.png"
+				},
+				"awayTeam": {
+					"team_id": 41,
+					"team_name": "Southampton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/41.png"
+				},
+				"goalsHomeTeam": 3,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "2-1",
+					"fulltime": "3-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157287,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-02-29T12:30:00+00:00",
+				"event_timestamp": 1582979400,
+				"firstHalfStart": 1582979400,
+				"secondHalfStart": 1582983000,
+				"round": "Regular Season - 28",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "The American Express Community Stadium",
+				"referee": "M. Atkinson",
+				"homeTeam": {
+					"team_id": 51,
+					"team_name": "Brighton",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/51.png"
+				},
+				"awayTeam": {
+					"team_id": 52,
+					"team_name": "Crystal Palace",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/52.png"
+				},
+				"goalsHomeTeam": 0,
+				"goalsAwayTeam": 1,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "0-1",
+					"extratime": null,
+					"penalty": null
+				}
+			},
+			{
+				"fixture_id": 157291,
+				"league_id": 524,
+				"league": {
+					"name": "Premier League",
+					"country": "England",
+					"logo": "https:\/\/media.api-sports.io\/football\/leagues\/39.png",
+					"flag": "https:\/\/media.api-sports.io\/flags\/gb.svg"
+				},
+				"event_date": "2020-02-28T20:00:00+00:00",
+				"event_timestamp": 1582920000,
+				"firstHalfStart": 1582920000,
+				"secondHalfStart": 1582923600,
+				"round": "Regular Season - 28",
+				"status": "Match Finished",
+				"statusShort": "FT",
+				"elapsed": 90,
+				"venue": "Carrow Road",
+				"referee": "C. Pawson",
+				"homeTeam": {
+					"team_id": 71,
+					"team_name": "Norwich",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/71.png"
+				},
+				"awayTeam": {
+					"team_id": 46,
+					"team_name": "Leicester",
+					"logo": "https:\/\/media.api-sports.io\/football\/teams\/46.png"
+				},
+				"goalsHomeTeam": 1,
+				"goalsAwayTeam": 0,
+				"score": {
+					"halftime": "0-0",
+					"fulltime": "1-0",
 					"extratime": null,
 					"penalty": null
 				}

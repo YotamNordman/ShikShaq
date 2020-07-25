@@ -6,9 +6,11 @@
 
   <ItemGroup>
     <Content Remove="Data\ExampleGamesResponse.json" />
+    <Content Remove="Data\ExampleGamesResponseOLD.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Data\ExampleGamesResponseOLD.json" />
     <None Include="Data\ExampleGamesResponse.json" />
   </ItemGroup>
 

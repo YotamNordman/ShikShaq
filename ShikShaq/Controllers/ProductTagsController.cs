@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ShikShaq.Data;
 using WebApplication1.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ShikShaq.Controllers
 {
@@ -20,11 +21,12 @@ namespace ShikShaq.Controllers
         }
 
         // GET: ProductTags
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.ProductTag.Include(o => o.Product).Include(o => o.Tag).ToListAsync());
         }
-
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Search(string name)
         {
             var productTagsList = _context.ProductTag.ToListAsync();
@@ -39,6 +41,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: ProductTags/Details/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -57,6 +60,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: ProductTags/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewBag.Products = new SelectList(_context.Product.ToList(), "Id", "Name");
@@ -70,6 +74,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("Id")] ProductTag productTag, int ProductId, int TagId)
         {
             if (ModelState.IsValid)
@@ -85,6 +90,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: ProductTags/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             ViewBag.Products = new SelectList(_context.Product.ToList(), "Id", "Name");
@@ -108,6 +114,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Id")] ProductTag productTag, int ProductId, int TagId)
         {
             if (id != productTag.Id)
@@ -142,6 +149,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: ProductTags/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -162,6 +170,7 @@ namespace ShikShaq.Controllers
         // POST: ProductTags/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var productTag = await _context.ProductTag.FindAsync(id);
