@@ -15,7 +15,7 @@
     </div>
 </form>
 
-<table class="table table-hover">
+<table class="table table-hover table-bordered">
     <thead>
         <tr>
             <th>
@@ -33,7 +33,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Lng)
             </th>
-            <th></th>
+            <th class="other-options">
+                Other Options
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -68,5 +70,11 @@
 <p>
     <a asp-action="Create" class="btn btn-primary">Create New</a>
 </p>
+
+@section Styles
+{
+    <link href="~/css/index-pages.css" rel="stylesheet" type="text/css">
+}
+
 
 

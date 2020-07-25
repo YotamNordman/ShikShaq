@@ -1,0 +1,24 @@
+﻿table.table-bordered {
+    border: 1px solid #333333;
+    margin-top: 20px;
+}
+
+    table.table-bordered > thead > tr > th {
+        border: 1px solid #333333;
+        text-align: center;
+        background-color: #333333;
+        color: whitesmoke;
+    }
+
+    table.table-bordered > tbody > tr > td {
+        border: 1px solid #333333;
+        text-align: center;
+    }
+
+table {
+    background-color: white
+}
+
+.other-options {
+    color: #cec5c5 !important
+}
