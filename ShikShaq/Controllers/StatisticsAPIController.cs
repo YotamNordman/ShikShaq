@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using ShikShaq.Data;
 using Microsoft.EntityFrameworkCore;
+using WebApplication1.Models;
 
 namespace ShikShaq.Controllers
 {
@@ -29,6 +30,24 @@ namespace ShikShaq.Controllers
                 Select(o => new { name = o.Key.Name, count = o.Sum(productsinorder => productsinorder.Quantity) }).
                 OrderBy(a => a.count).
                 ToDictionary(a => a.name, a => a.count);
+        }
+        [HttpGet("populartags")]
+        public async Task<ActionResult<Dictionary<string, int>>> PopularTags()
+        {
+            return context.ProductInOrder.Join(context.ProductTag,
+                productfromorder => productfromorder.Product.Id,
+                productfromtag => productfromtag.Product.Id,
+                (productfromorder, productfromtag) => new
+                {
+                    product = productfromorder.Product,
+                    productquantity = productfromorder.Quantity,
+                    tag = productfromtag.Tag,
+                }).
+                GroupBy(t => t.tag).
+                Select(o => new { name = o.Key.Name, count = o.Sum(productquantity => productquantity.productquantity) }).
+                Distinct().
+                ToDictionary(a => a.name, a => a.count);
+
         }
     }
 }
