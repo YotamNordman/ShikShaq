@@ -15,6 +15,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using System.Web.WebPages;
 using Microsoft.AspNetCore.Authorization;
+using Nancy.Bootstrapper;
 
 namespace ShikShaq.Controllers
 {
@@ -294,22 +295,35 @@ namespace ShikShaq.Controllers
         {
             int userId = HttpContext.User.Claims.ToList()[0].Value.AsInt();
             int productId = id;
-            int quantity = 1;
+            int quantity = 0;
             var product = await _context.Product
             .FirstOrDefaultAsync(m => m.Id == productId);
             var user = await _context.User
             .FirstOrDefaultAsync(m => m.Id == userId);
-            var cartitem = new CartItem
-            { 
-                //Product = product,
-                //User = user,
-                ProductId = productId,
-                UserId = userId,
-                Quantity = quantity
-            };
-            writecontext.CartItem.Add(cartitem);
-            await writecontext.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            var existingcartitem = _context.CartItem.SingleOrDefault(p => p.ProductId == productId && p.UserId == userId);
+            // If product is already in cart
+            if (existingcartitem != null)
+            {
+                existingcartitem.Quantity++;
+                await _context.SaveChangesAsync();
+            }
+            else
+            {
+                quantity = 1;
+                var cartitem = new CartItem
+                {
+                    //Product = product,
+                    //User = user,
+                    ProductId = productId,
+                    UserId = userId,
+                    Quantity = quantity
+                };
+                writecontext.CartItem.Add(cartitem);
+                await writecontext.SaveChangesAsync();
+            }
+
+
+            return RedirectToAction("Details",product);
         }
     }
 }
