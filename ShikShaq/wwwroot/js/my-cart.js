@@ -120,8 +120,12 @@ function checkoutOrder() {
                     removeAllItems();
                     $('#status-message').html('Order has been created successfully!');
                 },
-                error: function (jqXhr, textStatus, errorMessage) {
-                    $('#status-message').html('Error while creating the order! call an administrator to fix it!');
+                error: function (jqXhr) {
+                    if (jqXhr.status == 500) {
+                        $('#status-message').html('Error while creating the order! call an administrator to fix it!');
+                    } else {
+                        $('#status-message').html(jqXhr.responseJSON.error);
+                    }
                 }
             });
         } else {
