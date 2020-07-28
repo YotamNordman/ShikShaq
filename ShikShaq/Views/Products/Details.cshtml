@@ -1,56 +1,64 @@
 ﻿@model WebApplication1.Models.Product
 @using ShikShaq.Logic;
+@using Microsoft.AspNetCore.Http;
 
 @{
     ViewData["Title"] = "Details";
 }
 
-<h2>Details</h2>
 
-<div>
-    <h4>Product</h4>
-    <hr />
-    @{var imgsrc = ProductImageSourceFetcher.Fetch(Model);} 
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
-        <dt>
-            @Html.DisplayNameFor(model => model.Image)
-        </dt>
-        <dd>
-           <img src="@imgsrc">
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+<main class="container">
+
+    <!-- Left Column Image -->
+    @{var imgsrc = ProductImageSourceFetcher.Fetch(Model);}
+    <div class="left-column">
+        <img src="@imgsrc">
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+            <span>Product's Details</span>
+            <h1>@Html.DisplayFor(model => model.Name)</h1>
+            <p>@Html.DisplayFor(model => model.Description)</p>
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+            <!-- Cable Configuration -->
+            <div class="cable-config">
+                <span>Product Tags</span>
+
+                <div class="cable-choose">
+                    @foreach (var item in Model.ProductTags)
+                    {
+                        <button>@Html.DisplayFor(modelItem => item.Tag.Name)</button>
+                    }
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+            <span>@Html.DisplayFor(model => model.Price)$</span>
+
+            @{ int? userId = Context.Session.GetInt32("userId"); }
+
+            @if (userId > 0)
+            {
+                <a asp-action="AddToCart" asp-route-id="@Model.Id" class="cart-btn">Add to cart</a>
+            }
+
+        </div>
+    </div>
+</main>
 
 @section Styles
 {
-    <link href="~/css/details.css" rel="stylesheet" type="text/css">
+    <link href="~/css/product-details.css" rel="stylesheet" type="text/css">
 }
 
