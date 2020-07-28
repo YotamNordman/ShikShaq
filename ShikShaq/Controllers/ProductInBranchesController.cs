@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ShikShaq.Data;
 using WebApplication1.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ShikShaq.Controllers
 {
@@ -20,11 +21,13 @@ namespace ShikShaq.Controllers
         }
 
         // GET: ProductInBranches
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.ProductInBranch.Include(o => o.Product).Include(o => o.Branch).ToListAsync());
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Search(int quantity)
         {       
           var productsInBranchList = _context.ProductInBranch.Where(product => product.Quantity == quantity).ToListAsync();
@@ -32,6 +35,7 @@ namespace ShikShaq.Controllers
           return View("Index", await productsInBranchList);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: ProductInBranches/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -51,6 +55,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: ProductInBranches/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             ViewBag.Products = new SelectList(_context.Product.ToList(), "Id", "Name");
@@ -64,6 +69,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("Id,Quantity")] ProductInBranch productInBranch, int ProductId, int BranchId)
         {
             if (ModelState.IsValid)
@@ -79,6 +85,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: ProductInBranches/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             ViewBag.Products = new SelectList(_context.Product.ToList(), "Id", "Name");
@@ -102,6 +109,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Quantity")] ProductInBranch productInBranch, int ProductId, int BranchId)
         {
             if (id != productInBranch.Id)
@@ -136,6 +144,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: ProductInBranches/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -156,6 +165,7 @@ namespace ShikShaq.Controllers
         // POST: ProductInBranches/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var productInBranch = await _context.ProductInBranch.FindAsync(id);

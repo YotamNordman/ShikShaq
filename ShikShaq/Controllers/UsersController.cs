@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ShikShaq.Data;
 using WebApplication1.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ShikShaq.Controllers
 {
@@ -20,11 +21,13 @@ namespace ShikShaq.Controllers
         }
 
         // GET: Users
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.User.ToListAsync());
         }
 
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Search(string name, string address, float height)
         {
             var usersList = _context.User.Where(e => true);
@@ -51,6 +54,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: Users/Details/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -69,6 +73,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: Users/UserDetails/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> SimpleUserDetails(int? id)
         {
             if (id == null)
@@ -87,6 +92,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: Users/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -97,6 +103,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("Id,Name,Email,Birthday,Address,Height,Weight,Password,IsAdmin")] User user)
         {
             if (ModelState.IsValid)
@@ -109,6 +116,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: Users/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -131,6 +139,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Email,Birthday,Address,Height,Weight,Password,IsAdmin")] User user)
         {
             if (id != user.Id)
@@ -163,6 +172,7 @@ namespace ShikShaq.Controllers
 
 
         // GET: Users/SimpleUserEdit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> SimpleUserEdit(int? id)
         {
             if (id == null)
@@ -183,6 +193,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> SimpleUserEdit(int id, [Bind("Id,Name,Email,Birthday,Address,Height,Weight,Password,IsAdmin")] User user)
         {
             if (id != user.Id)
@@ -215,6 +226,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: Users/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -235,6 +247,7 @@ namespace ShikShaq.Controllers
         // POST: Users/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var user = await _context.User.FindAsync(id);

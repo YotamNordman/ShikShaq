@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ShikShaq.Data;
 using WebApplication1.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ShikShaq.Controllers
 {
@@ -20,6 +21,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: Branches
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Branch.ToListAsync());
@@ -44,6 +46,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: Branches/Details/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -61,7 +64,9 @@ namespace ShikShaq.Controllers
             return View(branch);
         }
 
+
         // GET: Branches/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -72,6 +77,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("Id,Name,DateOpened,Address,Lat,Lng")] Branch branch)
         {
             if (ModelState.IsValid)
@@ -84,6 +90,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: Branches/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -104,6 +111,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,DateOpened,Address,Lat,Lng")] Branch branch)
         {
             if (id != branch.Id)
@@ -135,6 +143,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: Branches/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -154,6 +163,7 @@ namespace ShikShaq.Controllers
 
         // POST: Branches/Delete/5
         [HttpPost, ActionName("Delete")]
+        [Authorize(Roles = "Admin")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {

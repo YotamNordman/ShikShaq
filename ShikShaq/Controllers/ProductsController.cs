@@ -36,7 +36,6 @@ namespace ShikShaq.Controllers
         {
             return View(await _context.Product.ToListAsync());
         }
-
         public async Task<IActionResult> Search(string name, string description, string color, float price)
         {
             var productsList = _context.Product.Where(e => true);
@@ -87,6 +86,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: Products/Create
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
@@ -97,6 +97,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([Bind("Id,Name,Description,Price,Color")] Product product, List<IFormFile> Image)
         {
             if (ModelState.IsValid)
@@ -123,6 +124,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: Products/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -143,6 +145,7 @@ namespace ShikShaq.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Price,Color")] Product product, List<IFormFile> Image)
         {
             if (id != product.Id)
@@ -187,6 +190,7 @@ namespace ShikShaq.Controllers
         }
 
         // GET: Products/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -205,6 +209,7 @@ namespace ShikShaq.Controllers
         }
 
         // POST: Products/Delete/5
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
