@@ -263,6 +263,7 @@ namespace ShikShaq.Controllers
                         RemoveAllUserCartItem(userId);
 
                         await _context.SaveChangesAsync();
+
                         return StatusCode(StatusCodes.Status200OK);
                     }
                 }
