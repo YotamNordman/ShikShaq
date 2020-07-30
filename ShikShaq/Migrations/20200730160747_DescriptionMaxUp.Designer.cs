@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ShikShaq.Data;
 
 namespace ShikShaq.Migrations
 {
     [DbContext(typeof(ShikShaqContext))]
-    partial class ShikShaqContextModelSnapshot : ModelSnapshot
+    [Migration("20200730160747_DescriptionMaxUp")]
+    partial class DescriptionMaxUp
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -96,7 +98,7 @@ namespace ShikShaq.Migrations
                         .HasMaxLength(45);
 
                     b.Property<string>("Description")
-                        .HasMaxLength(300);
+                        .HasMaxLength(130);
 
                     b.Property<byte[]>("Image");
 
