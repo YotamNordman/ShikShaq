@@ -13,17 +13,6 @@ namespace ShikShaq.Controllers
     public class HomeController : Controller
     {
 
-        private readonly ShikShaqContext _context;
-        private ShikShaqContextInitializer dbInitializer;
-
-        public HomeController (ShikShaqContext context)
-        {
-            _context = context;
-
-            dbInitializer = new ShikShaqContextInitializer();
-            dbInitializer.Initialize(_context);
-        }
-
         public IActionResult Index()
         {
             return RedirectToAction("Index", "Products");

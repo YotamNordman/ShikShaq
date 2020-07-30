@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using ShikShaq.Data;
 using Microsoft.Extensions.DependencyInjection;
 using ShikShaq.Migrations;
+using ShikShaq.Logic;
 
 namespace ShikShaq
 {
@@ -22,7 +23,9 @@ namespace ShikShaq
             var services = scope.ServiceProvider;
             
             var context = services.GetRequiredService<ShikShaqContext>();
-            DBPopulator.Populate(context);
+            ShikShaqContextInitializer initializer = new ShikShaqContextInitializer();
+            initializer.Initialize(context);
+
             host.Run();
 
         }
