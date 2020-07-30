@@ -10,6 +10,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ShikShaq.Controllers
 {
@@ -88,6 +89,7 @@ namespace ShikShaq.Controllers
             return RedirectToAction("Index", "Products");
         }
 
+        [Authorize(Roles = "User,Admin")]
         public async Task<ActionResult> Orders()
         {
             int? userId = HttpContext.Session.GetInt32("userId");
@@ -108,6 +110,7 @@ namespace ShikShaq.Controllers
             return View(orders);
         }
 
+        [Authorize(Roles = "User,Admin")]
         public async Task<ActionResult> Cart()
         {
             int? userId = HttpContext.Session.GetInt32("userId");
