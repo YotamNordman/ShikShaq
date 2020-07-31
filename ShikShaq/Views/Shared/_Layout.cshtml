@@ -30,7 +30,7 @@
     </environment>
 </head>
 <body>
-  
+
     <nav class="topnav" id="myTopnav">
         <a asp-controller="Home" asp-action="Index" class="active">SHIK SHAQ</a>
 
@@ -85,7 +85,6 @@
             </button>
             <div class="dropdown-content">
                 <a asp-controller="Products" asp-action="Index" method="get">All Products</a>
-                <a asp-controller="Products" asp-action="Index" method="get">Find Products</a>
                 <a asp-controller="Statistics" asp-action="Index" method="get">Statistics</a>
             </div>
         </div>
@@ -106,7 +105,7 @@
                 <partial name="/Views/Shared/RecommendedProductsPartial.cshtml" />
             </div>
         </div>
-        <hr/>
+        <hr />
         <footer>
             <p>&copy; 2020 - ShikShaq</p>
             <div id="fb-root"></div>
@@ -146,7 +145,7 @@
     @RenderSection("Styles", false)
 
     <script src="~/js/navbar.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link href="~/css/navbar.css" rel="stylesheet" type="text/css">
-
 </body>
 </html>

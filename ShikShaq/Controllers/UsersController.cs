@@ -32,7 +32,7 @@ namespace ShikShaq.Controllers
         {
             var usersList = _context.User.Where(e => true);
 
-            if(name != null)
+            if (name != null)
             {
                 usersList = usersList.Where(user => user.Name.ToLower().Contains(name.ToLower()));
             }
@@ -43,14 +43,19 @@ namespace ShikShaq.Controllers
 
             }
 
-            if(height != 0)
+            if (height != 0)
             {
                 usersList = usersList.Where(user => user.Height == height);
 
             }
 
-           
-            return View("Index", await usersList.ToListAsync());
+           /* var query = from p in _context.User
+                        where p.Name.Contains(name)
+                        where p.Address.Contains(address)
+                        where p.Height.Equals(height)
+                        select p;*/
+
+            return PartialView(await usersList.ToListAsync());
         }
 
         // GET: Users/Details/5
