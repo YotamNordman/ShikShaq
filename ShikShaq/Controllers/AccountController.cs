@@ -235,14 +235,40 @@ namespace ShikShaq.Controllers
             {
                 try
                 {
-                    order.OrderDate = DateTime.Now;
-                    order.UserId = userId.GetValueOrDefault();
-                    _context.Order.Add(order);
+                    List<ProductInBranch> productsInBranch = await getBranchProducts(order);
 
-                    RemoveAllUserCartItem(userId);
+                    List<ProductInOrder> invalidProducts = getInvalidProductsInBranch(order, productsInBranch);
 
-                    await _context.SaveChangesAsync();
-                    return StatusCode(StatusCodes.Status200OK);
+                    if (invalidProducts.Count > 0)
+                    {
+                        HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                        string missingProductName = getMissingProductName(invalidProducts).Name;
+
+                        return Json(new { error = "Invalid product in branch - " + missingProductName });
+                    }
+
+                    List<ProductInOrder> missingProducts = getMissingProductsInBranch(order, productsInBranch);
+
+                    if (missingProducts.Count > 0)
+                    {
+                        HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+                        string missingProductName = getMissingProductName(missingProducts).Name;
+
+                        return Json(new { error = "Not enough " + missingProductName + " found in selected branch" });
+                    }
+                    else
+                    {
+                        SubstractProducts(order);
+                        order.OrderDate = DateTime.Now;
+                        order.UserId = userId.GetValueOrDefault();
+                        _context.Order.Add(order);
+
+                        RemoveAllUserCartItem(userId);
+
+                        await _context.SaveChangesAsync();
+
+                        return StatusCode(StatusCodes.Status200OK);
+                    }
                 }
                 catch (Exception e)
                 {
@@ -256,6 +282,51 @@ namespace ShikShaq.Controllers
 
         }
 
+        private async void SubstractProducts(Order order)
+        {
+
+            foreach (ProductInOrder orderedProduct in order.ProductInOrders.ToList())
+            {
+                ProductInBranch branchProduct = _context.ProductInBranch
+                                            .Include(p => p.Branch)
+                                            .Include(p => p.Product)
+                                            .Where(productInBranch =>
+                                                productInBranch.Product.Id == orderedProduct.ProductId && productInBranch.Branch.Id == order.BranchId).FirstOrDefault();
+                branchProduct.Quantity -= orderedProduct.Quantity;
+            }
+
+            await _context.SaveChangesAsync();
+        }
+
+        private async Task<List<ProductInBranch>> getBranchProducts(Order order)
+        {
+            return await _context.ProductInBranch.Include(p => p.Product)
+                .Where(productInBranch => productInBranch.Branch.Id == order.BranchId)
+                .ToListAsync();
+        }
+
+        private List<ProductInOrder> getInvalidProductsInBranch(Order order, List<ProductInBranch> productsInBranch)
+        {
+            return order.ProductInOrders
+                        .Where(orderedProduct => !productsInBranch
+                            .GroupBy(pib => pib.Product.Id).Select(group => group.Key)
+                            .Contains(orderedProduct.ProductId))
+                        .ToList();
+        }
+
+        private List<ProductInOrder> getMissingProductsInBranch(Order order, List<ProductInBranch> productsInBranch)
+        {
+            return order.ProductInOrders
+                        .Where(productInOrder => productsInBranch
+                            .Find(product => productInOrder.ProductId == product.Product.Id).Quantity < productInOrder.Quantity)
+                        .ToList();
+        }
+
+        private Product getMissingProductName(List<ProductInOrder> missingProducts)
+        {
+            return _context.Product.Find(missingProducts.First().ProductId);
+        }
+
         private void RemoveAllUserCartItem(int? userId)
         {
             var removeOldCart = from ci in _context.CartItem
@@ -264,7 +335,5 @@ namespace ShikShaq.Controllers
 
             _context.CartItem.RemoveRange(removeOldCart);
         }
-
-
     }
 }
