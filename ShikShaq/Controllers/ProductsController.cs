@@ -328,7 +328,7 @@ namespace ShikShaq.Controllers
             }
 
 
-            return RedirectToAction("Details",product);
+            return RedirectToAction("Index");
         }
     }
 }

@@ -13,7 +13,7 @@ namespace WebApplication1.Models
         [StringLength(45)]
         public string Name { get; set; }
 
-        [StringLength(45)]
+        [StringLength(300)]
         public string Description { get; set; }
 
         public float Price { get; set; }

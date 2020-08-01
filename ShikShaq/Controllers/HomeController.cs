@@ -4,12 +4,15 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using ShikShaq.Data;
+using ShikShaq.Logic;
 using ShikShaq.Models;
 
 namespace ShikShaq.Controllers
 {
     public class HomeController : Controller
     {
+
         public IActionResult Index()
         {
             return RedirectToAction("Index", "Products");
