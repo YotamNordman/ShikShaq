@@ -49,12 +49,6 @@ namespace ShikShaq.Controllers
 
             }
 
-           /* var query = from p in _context.User
-                        where p.Name.Contains(name)
-                        where p.Address.Contains(address)
-                        where p.Height.Equals(height)
-                        select p;*/
-
             return PartialView(await usersList.ToListAsync());
         }
 
