@@ -36,7 +36,7 @@
 
         @{ int? userId = Context.Session.GetInt32("userId"); }
 
-        @if (userId > 0)
+        @if (User.Identity.IsAuthenticated)
         {
             <div class="dropdown">
                 <button class="dropbtn">
@@ -44,7 +44,7 @@
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-content">
-                    <a href="/users/SimpleUserDetails/@userId" method="get">My Details</a>
+                    <a href="/users/SimpleUserDetails/@User.Claims.ToList()[0].Value" method="get">My Details</a>
                     <a asp-controller="Account" asp-action="Cart" method="get">My Cart</a>
                     <a asp-controller="Account" asp-action="Orders" method="get">My Orders</a>
                     <a asp-controller="Account" asp-action="Logout" method="get">Logout</a>
@@ -58,7 +58,7 @@
 
         @{ string isAdmin = Context.Session.GetString("isUserAdmin"); }
 
-        @if (isAdmin != null && isAdmin.Equals("Y") && User.Identity.IsAuthenticated && User.HasClaim(ClaimTypes.Role, "Admin"))
+        @if (User.Identity.IsAuthenticated && User.HasClaim(ClaimTypes.Role, "Admin"))
         {
             <div class="dropdown">
                 <button class="dropbtn">
