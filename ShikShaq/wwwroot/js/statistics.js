@@ -144,10 +144,77 @@ $.ajax({
                 .enter()
                 .append("rect")
                 .attr("x", function (d) { return x(d);})
-                .attr("y", function (d) { console.log(d); console.log('wasd'); return y(data[d]); })
+                .attr("y", function (d) { console.log(d); return y(data[d]); })
                 .attr("width", x.bandwidth()/2)
                 .attr("height", function (d) { return (data[d]*30); })
                 .attr("fill", "#69b3a2")
+
+        
+    },
+    error: function (result) {
+    }
+});
+var cart_data;
+var cartlabels;
+var cartdataset;
+$.ajax({
+    method: 'get',
+    url: '/api/statisticsapi/mostincart',
+    data: "{}",
+    success: function (data) {
+        cart_data = data
+        cartlabels = Object.keys(data);
+        cartdataset = Object.values(data);
+        // set the dimensions and margins of the graph
+        var width = 450
+            height = 450
+            margin = 40
+        var radius = Math.min(width, height) / 2 - margin
+
+        // append the svg object to the body of the page
+        var svg = d3.select("#mostincart")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .append("g")
+            .attr("transform","translate(" + width / 2 + "," + height / 2 + ")");
+
+
+        var color = d3.scaleOrdinal()
+        .domain(["a", "b", "c", "d", "e", "f", "g", "h"])
+        .range(d3.schemeSet2);
+        
+        // Compute the position of each group on the pie:
+        var pie = d3.pie()
+        .value(function(d) {return d.value; })
+        var data_ready = pie(d3.entries(data))
+       
+        // shape helper to build arcs:
+        var arcGenerator = d3.arc()
+          .innerRadius(0)
+          .outerRadius(radius)
+        
+        // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+        svg
+          .selectAll('mySlices')
+          .data(data_ready)
+          .enter()
+          .append('path')
+            .attr('d', arcGenerator)
+            .attr('fill', function(d){ return(color(d.data.key)) })
+            .attr("stroke", "black")
+            .style("stroke-width", "2px")
+            .style("opacity", 0.7)
+         // Now add the annotation. Use the centroid method to get the best coordinates
+          svg
+            .selectAll('mySlices')
+            .data(data_ready)
+            .enter()
+            .append('text')
+            .text(function(d){ return d.data.key})
+            .attr("transform", function(d) { return "translate(" + arcGenerator.centroid(d) + ")";  })
+            .style("text-anchor", "middle")
+            .style("font-size", 17)
 
         
     },

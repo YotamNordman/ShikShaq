@@ -49,5 +49,23 @@ namespace ShikShaq.Controllers
                 ToDictionary(a => a.name, a => a.count);
 
         }
+        [HttpGet("mostincart")]
+        public async Task<ActionResult<Dictionary<string, int>>> MostInCart()
+        {
+            return context.CartItem.Join(context.ProductTag,
+                productfromcart => productfromcart.Product.Id,
+                productfromtag => productfromtag.Product.Id,
+                (productfromcart, productfromtag) => new
+                {
+                    product = productfromcart.Product,
+                    productquantity = productfromcart.Quantity,
+                    tag = productfromtag.Tag,
+                }).
+                GroupBy(t => t.tag).
+                Select(o => new { name = o.Key.Name, count = o.Sum(productquantity => productquantity.productquantity) }).
+                Distinct().
+                ToDictionary(a => a.name, a => a.count);
+
+        }
     }
 }
