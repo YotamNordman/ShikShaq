@@ -115,6 +115,20 @@ namespace ShikShaq.Controllers
         }
 
         [Authorize(Roles = "User,Admin")]
+        public ActionResult MyDetails()
+        {
+
+            int? userId = HttpContext.Session.GetInt32("userId");
+            User user = _context.User.Find(userId);
+
+            if (user == null)
+                RedirectToAction("Login");
+
+
+            return View("../Users/Details", user);
+        }
+
+        [Authorize(Roles = "User,Admin")]
         public async Task<ActionResult> Cart()
         {
             int? userId = HttpContext.Session.GetInt32("userId");
