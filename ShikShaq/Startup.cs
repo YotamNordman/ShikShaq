@@ -36,12 +36,18 @@ namespace ShikShaq
             services.AddDistributedMemoryCache();
             services.AddSession();
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).
-                AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, (options) => {});
+                AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, (options) => {
+                    options.AccessDeniedPath = "/Error/AccessDeniedPage";
+                    options.LoginPath = "/Account/Login";
+                    options.LogoutPath = "/Account/Logout";
+                });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<ShikShaqContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("ShikShaqContext")));
+
+           
 
         }
 
